@@ -3,7 +3,8 @@ html, body {
     padding:0;
     overflow:hidden;
     background-color:#000;
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Roboto', sans-serif;
+	font-size: 1em;
 }
 a{
     color:currentColor;
@@ -13,9 +14,12 @@ a{
     height:100vh;
     position:absolute;
 }
+.rrlogo {
+    text-align: center;
+}
 .menu{
     color:#ddd;
-    background-color: #333;
+    background-color: #a31515;
     position:fixed;
     left:0;
     top:0;
@@ -35,11 +39,11 @@ a{
     content: '';
     position:absolute;
     right:0px;
-    width:10px;
+    width:5px;
     top:0;
     bottom:0;
     height:100%;
-    background-color:#444;
+    background-color: #ff0909;
     
 }
 .menu.active{
@@ -57,7 +61,7 @@ a{
     right:-30px;
     width:30px;
     height:150px;
-    background-color:#444;
+    background-color: #ff0909;
     top:0;
     bottom:0;
     display:block;
@@ -106,26 +110,90 @@ a{
     display:flex;
     margin-top:10px;
 }
+
+/* The slider */
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    bottom: 5px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #241010;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 24px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #ff0909;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #ff0909;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+  }
+
+/* MENUTABS */
 .menu__tab{
     cursor: pointer;
-    background-color:#222;
-    border:1px solid #444;
+    background-color: #1e1111;
     color:#aaa;
     display:block;
-    flex-grow:1;
-    padding:10px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom:0;
+    width: 200px;
+    height: 40px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+    border: 0px
 }
-.menu__tab.active, .menu__tab:hover{
-    background-color:#333;
-    border-color:#aaa;
+.menu__tab.active{
+    background-color:#752c2c;
+    color:#ddd;
+    font-weight:bold;
+}
+
+.menu__tab:hover{
+    background-color:#4c2323;
     color:#ddd;
 }
 
 .menu__content{
-    background-color:#444;
+    background-color:#752c2c;
     overflow-y:auto;
     max-height: 60vh;
 }
@@ -159,9 +227,7 @@ a{
     border-top-right-radius: 5px;
     text-shadow: 1px 0px 3px black, -1px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black; 
 }
-#layers li button.castlevania{
-    background-image: url('img/website/sevii_button.png');
-}
+
 #layers li button:hover{
     width:95%;
 }
@@ -352,4 +418,22 @@ a{
 }
 .reverse-range{
     direction: rtl;
+}
+.artist_mobile {
+    display: none;
+}
+.artist_mobile {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: 64px;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.artist_mobile .area__info__name {
+    padding-left: 20px;
+    padding-right: 20px;
 }

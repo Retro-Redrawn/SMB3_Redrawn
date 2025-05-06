@@ -1,6 +1,6 @@
-# RETRO REDRAWN - Super Mario Bros. 3 Redrawn
+# RETRO REDRAWN - Koholint Redrawn
 
-Repository for the Super Mario Bros. 3 project.
+Repository for the Koholint Redrawn project.
 
 The base code was originally programmed by Jerky (@Hyperjerk) for the Retro Redrawn Kanto and Johto projects.
 This version on GitHub was created and refactored by Tyson Moll for reuse and repurpose (https://tysonmoll.ca/).
@@ -8,7 +8,7 @@ This version on GitHub was created and refactored by Tyson Moll for reuse and re
 Artists are credited for their work in the project website (as denoted in the areas.js file).
 
 Official Website: https://retroredrawn.com/
-Discord: https://discord.gg/GmaVfMXgEc
+Discord: https://discord.gg/ZN3297XBtU
 
 ## Creating a new Redrawn
 

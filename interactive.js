@@ -26,7 +26,7 @@ var currentPos = {x: 0, y: 0} //lerp
 // Map
 const NEW_STYLE_NAME = 'new';
 const OLD_STYLE_NAME = 'old';
-const GRID_CELL_IMAGE = 'img/website/grid_test.png';
+const GRID_CELL_IMAGE = 'img/website/grid_mario.png';
 var activeAreas = redrawnLayers[activeLayerIndex].areas  // Active array of areas (and initial area)
 var layerCount = redrawnLayers.length;  // Total number of layers
 var canvasDimensions = redrawnLayers[activeLayerIndex].canvasSize; // Dimension of active canvas
@@ -35,6 +35,9 @@ var mapImages = null;
 var currentMapStyle = NEW_STYLE_NAME;
 var viewport = null;
 
+// Auto Highlight
+var autoHighlight = true;
+var highlightedArea = null;
 
 // Filters
 var blurFilter = null
@@ -100,13 +103,13 @@ function loadLayer (areaArray, areaImageArray, areaOldImageArray, layerSubfolder
         // Load new images
         var img = new Image();
         img.src = createImageLink(layerSubfolder, NEW_STYLE_NAME, area.ident);
-        img.onload = function () { onAreaImageLoaded(areaImageArray); };
+        checkImageLoaded(img, function () { onAreaImageLoaded(areaImageArray); });
         areaImageArray.push(img);
-
+        
         // Load old images
         var oldimg = new Image();
         oldimg.src = createImageLink(layerSubfolder, OLD_STYLE_NAME, area.ident);
-        oldimg.onload = function () { onAreaImageLoaded(areaOldImageArray); };
+        checkImageLoaded(oldimg, function () { onAreaImageLoaded(areaImageArray); });
         areaOldImageArray.push(oldimg);
     }
 }
@@ -146,6 +149,24 @@ function onAreaImageLoaded (areaImageArray) {
             completeLoading();
         }
     }
+}
+
+//Check if the image is properly loaded and rendered, .complete does not mean it is rendered and the size is might be set incorrectly
+function checkImageLoaded(img, callback) {
+    img.onload = function () {
+        if (img.naturalHeight > 0 && img.naturalWidth > 0) callback();
+        var counter = 0;
+        var interval = setInterval(function () {
+            counter++;
+            if ((img.naturalHeight > 0 && img.naturalWidth > 0) || counter >= 20) {
+                clearInterval(interval);
+                callback();
+            }
+        }, 500);
+    };
+    img.onerror = function() {
+        callback();
+    };
 }
 
 /** Completes the loading process. */
@@ -274,14 +295,15 @@ function toggleMapStyle () {
     var selectOriginal = document.getElementById('mapSelectOriginal');
     var lastMapStyle = currentMapStyle;
 
-    if (selectRedrawn.checked) 
-    {
-        currentMapStyle = NEW_STYLE_NAME;
-    }
-    if (selectOriginal.checked) 
-    {
-        currentMapStyle = OLD_STYLE_NAME;
-    }
+
+    if (currentMapStyle == NEW_STYLE_NAME) 
+        {
+            currentMapStyle = OLD_STYLE_NAME;
+        }
+    else
+        {
+            currentMapStyle = NEW_STYLE_NAME;
+        }
 
     // Build map if changed
     if (!(lastMapStyle === currentMapStyle)) 
@@ -360,7 +382,8 @@ function setUpAreas () {
         }
         
         // Prepare the HTML block corresponding to an area and its associated credts
-        var html = `<li class="area" title="${area.title}" style="background-color:${backgroundColor}" onclick="focusOnArea('${area.title}')">
+        var html = 
+        `<li class="area" title="${area.title}" style="background-color:${backgroundColor}" onclick="focusOnArea('${area.title}')">
             <div class="area__header" >
                 <span class="material-icons">
                     ${materialIcon}
@@ -373,10 +396,9 @@ function setUpAreas () {
                 <div class="area__info__inner">
                     <div class="area__info__img">
                         ${artistImageHTML}
-                        
                     </div>
                     <div class="area__info__name">
-                        <a href="${area.url}" target="_blank" title="${area.artist}">${area.artist}</a>
+                        ${area.url ? `<a href="${area.url}" target="_blank" title="${area.artist}">${area.artist}</a>` : `<a>${area.artist}</a>`}
                         ${area.post_url ? `<a href="${area.post_url}" target="_blank" title="View Post">[View Post]</a>` : ''}
                     </div>
                 </div>
@@ -470,6 +492,7 @@ function tick () {
     viewport.filters = []
     if (cameraAnimation.progress >= 1) {
         cameraAnimation.playing = false
+        cameraAdjustment.progress = 1;
     }
     if (!cameraAnimation.playing) {
         if (zoomLevel !== currentZoom) {
@@ -477,10 +500,10 @@ function tick () {
                 viewport.filters = [blurFilter]
             }
             currentZoom = lerp(currentZoom, zoomLevel, 0.2)
-            if (Math.abs(zoomLevel - currentZoom) < 0.005) { 
+            if (Math.abs(zoomLevel - currentZoom) < 0.005) { // Floating point rounding
                 currentZoom = zoomLevel
-                map.x = currentPos.x = zoomCenter.x; map.y = currentPos.y = zoomCenter.y;
-                
+                map.x = currentPos.x = zoomCenter.x; 
+                map.y = currentPos.y = zoomCenter.y;
             }
             map.scale.set(currentZoom)
 
@@ -519,6 +542,7 @@ function tick () {
             pinchForTick = null
         }
         checkMapBoundaries()
+        checkAutoHighlight()
     } else {
 
         // Calculate position and scale changes relative to a camera animation adjustment
@@ -531,6 +555,7 @@ function tick () {
         map.x = newPosX
         map.y = newPosY
     }
+
     if (tourMode) {
         if ((!cameraAnimation.playing || cameraAnimation.progress > (1 - (cameraAnimation.speed * 100))) && !tourTransition) {
             tourTransition = true
@@ -570,12 +595,7 @@ function toggleMenu () {
     elem.classList.toggle('active')
     var activeArea = getActiveArea()
     if (activeArea) {
-        if (elem.classList.contains('active')) {
-            showAreaZone(activeArea.obj)
-
-        } else {
-            hideAreaZone(activeArea.obj)
-        }
+        openAreaInDOM(activeArea.obj)
     }
     
 }
@@ -631,6 +651,7 @@ function onClick (e) {
     }
 }
 
+/** Callback occurring when a drag move occurs */
 function onDragMove (e) {
     if (mouseDown && !cameraAnimation.playing) {
         if (e.data.originalEvent.type === 'touchmove' && e.data.originalEvent.touches && e.data.originalEvent.touches.length === 2) {
@@ -643,15 +664,15 @@ function onDragMove (e) {
             if (previousPinchDistance) {
                 var diff = Math.abs(currentPinchDistance - previousPinchDistance)
                 if (diff > 1) {
-                    if (currentPinchDistance > previousPinchDistance) {
+                    // Set x and y positions relative to pinch middle
+                    if (currentPinchDistance > previousPinchDistance) { // Zoom / Pinch outwards
                         pinchForTick = {
                             factor: 1.06,
                             x: touches[0].pageX - (pinchX / 2),
                             y: touches[0].pageY - (pinchY / 2),
                         }
                     }
-                    if (currentPinchDistance < previousPinchDistance) {
-                        // instantZoom(,touches[0].pageX, touches[0].pageY)
+                    if (currentPinchDistance < previousPinchDistance) { // Zoom / Pinch inwards
                         pinchForTick = {
                             factor: .94,
                             x: touches[0].pageX - (pinchX / 2),
@@ -680,7 +701,7 @@ function onDragMove (e) {
         dragVelocity = { x: velocityX, y: velocityY }
         map.x += dragVelocity.x
         map.y += dragVelocity.y
-        zoomCenter = { x:map.x, y: map.y }
+        zoomCenter = { x: map.x, y: map.y }
         currentPos = zoomCenter
         
         checkMapBoundaries()
@@ -737,19 +758,25 @@ function zoom(s,x,y){
 function instantZoom(s,x,y){
 
     // Perform the requested zoom
+
+    var lastZoomLevel = zoomLevel;
     zoom(s,x,y);
 
-    // Immediately lock in the target zoom values
-    map.scale.set(zoomLevel)
-    currentZoom = zoomLevel
-    currentPos = {... zoomCenter}
+    // Don't bother continuing the operation if the zoom level didn't change
+    if (lastZoomLevel != zoomLevel) 
+    {
+        // Immediately lock in the target zoom values
+        map.scale.set(zoomLevel)
+        currentZoom = zoomLevel
+        currentPos = {... zoomCenter}
 
-    // console.log(zoomCenter)
+        // console.log(zoomCenter)
 
-    map.x = zoomCenter.x
-    map.y = zoomCenter.y
+        map.x = zoomCenter.x
+        map.y = zoomCenter.y
 
-    checkMapBoundaries()
+        checkMapBoundaries()
+    }
 }
 
 function moveCameraTo (x, y, zoom, camAnimationSpeed, useEasing) {
@@ -836,7 +863,7 @@ function openAreaInDOM (a) {
     if (typeof a === 'string') {
         area = activeAreas.find(x => x.title === a)
     }
-    var elems = document.querySelectorAll(`#areas`)
+    var elems = document.querySelectorAll(`.area`)
     if (elems.length > 0) {
         for (var i = 0; i < elems.length; i++) {
             var elem = elems[i]
@@ -848,6 +875,40 @@ function openAreaInDOM (a) {
             }       
         }
     }
+    updateMobileArtist(area);
+}
+
+function updateMobileArtist(area) {
+    
+    var areaArtist = area.artist.replace('@', '');
+    document.querySelector('.artist_mobile').style.display = areaArtist === '' ? 'none' : isMenuOpen() ? 'none' : '';
+
+    var containerName = document.querySelector('.artist_mobile .area__info__name');
+    containerName.innerHTML = `
+        ${area.url ? `<a href="${area.url}" target="_blank" title="${area.artist}">${area.artist}</a>` : `<a>${area.artist}</a>`}
+        ${area.post_url ? `<a href="${area.post_url}" target="_blank" title="View Post">[View Post]</a>` : ''}
+    `;
+    var containerImage = document.querySelector('.artist_mobile .area__info__img');
+    var a = document.querySelector('.artist_mobile .area__info__img a');
+    a.href = area.url;
+    a.title = area.artist;
+    var image = document.querySelector('.artist_mobile .area__info__img img');
+
+    var areaArtistImage = area.artistImageOverride;
+    if (areaArtistImage === '') {
+        areaArtistImage = areaArtist;   // Fallback if no artist image is defined
+    }
+    var artistImgPath = artistImgDir + areaArtistImage + artistImgExtension;
+    image.src = artistImgPath;
+    image.alt = area.artist;
+
+    containerImage.style.display = 'none';
+    image.onload = function(){
+        containerImage.style.display = '';
+    }
+    image.onerror = function(){
+        containerImage.style.display = 'none';
+    };
 }
 
 // #region Tour Methods
@@ -971,6 +1032,25 @@ function checkMapBoundaries () {
     if (map.y < Math.floor(window.innerHeight / 2) - map.height) { map.y = Math.floor(window.innerHeight / 2) - map.height }
 }
 
+function checkAutoHighlight() {
+    if (autoHighlight) {
+        var mapPosition = screenToMapPoint({ x: app.renderer.width / 2, y: app.renderer.height / 2 }, map, currentZoom);
+        if (isMenuOpen()) {
+            mapPosition.x += (150 / currentZoom);//Offset when menu is open (which has a fixed width of 300px)
+        }
+        var area = getAreaOnPoint(mapPosition, activeAreas);
+        if (area && highlightedArea != area) {
+            // console.log(highlightedArea);
+            highlightedArea = area;
+            for (var i = 0; i < activeAreas.length; i++) {
+                hideAreaZone(activeAreas[i])
+            }
+            showAreaZone(area);
+            openAreaInDOM(area);
+        }
+    }
+}
+
 //#region Math
 
 /** Basic LERP function. */
@@ -1013,7 +1093,7 @@ function getActiveArea () {
 
 /** Callback occurring when the window is resized. */
 function onResize () {
-    app.renderer.resize(window.innerWidth, window.innerHeight);
+    if(app && app.renderer) app.renderer.resize(window.innerWidth, window.innerHeight);
 }
 
 function changeCameraSpeed (e) {

@@ -6,7 +6,7 @@
 *   Contains implementation data specific to a Redrawn project.
 *
 *   by Tyson Moll (vvvvvvv), 2023.
-*
+*   I touched this too >_> Blinde
 */
 
 // Directories
@@ -14,23 +14,27 @@ var artistImgDir = "img/profiles/";
 var artistImgExtension = '.png';  // Image extension for artist images.
 // (having JavaScript self-determine if an image exists without a particular extension is difficult)
 
+// Audio
+var bgmTrack = null;
+
 /** Content layers in the Redrawn */
 var activeLayerIndex = 0;           // Currently active layer index (and initial index)
 var redrawnLayers = [
     {
-        name: "smb3",
-        canvasSize: {width: 10000, height: 2096},
+        name: "game", //foldername?
+        canvasSize: {width: 2655, height: 3400},
         areas: marioAreas
     }
 ];
 
 /** Biome Data (Screen icons) */
+// see icon list here >> https://fonts.google.com/icons
 var biomes = [
     {
         name: "Terrace",
         ident: "terrace",
         iconId: "grass",
-        color: 'rgb(74 139 89)',
+        color: 'rgb(90 180 100)',
     },
     {
         name: "Underground",
@@ -45,15 +49,58 @@ var biomes = [
         color: 'rgb(114 79 52)',
     },
     {
+        name: "Town",
+        ident: "town",
+        iconId: "house",
+        color: 'rgb(150 90 45)',
+    },
+    {
+        name: "Dungeon",
+        ident: "dungeon",
+        iconId: "music_note",
+        color: 'rgb(180 60 90)',
+    },
+
+    {
         name: "Boss",
         ident: "boss",
         iconId: "dark_mode",
-        color: 'rgb(129 28 56)',
+        color: 'rgb(110 25 40)',
     },
     {
         name: "Other",
         ident: "other",
         iconId: "dataset",
         color: 'rgb(94 94 94)',
+    },
+    {
+        name: "Mountain",
+        ident: "mountain",
+        iconId: "landscape",
+        color: 'rgb(120 94 94)',
+    },
+    {
+        name: "Forest",
+        ident: "forest",
+        iconId: "forest",
+        color: 'rgb(30 120 80)',
+    },
+    {
+        name: "Desert",
+        ident: "desert",
+        iconId: "sunny",
+        color: 'rgb(240 170 30)',
+    },
+    {
+        name: "Beach",
+        ident: "beach",
+        iconId: "beach_access",
+        color: 'rgb(255 200 60)',
+    },
+    {
+        name: "Surfing",
+        ident: "surfing",
+        iconId: "surfing",
+        color: 'rgb(20 80 160)',
     },
 ];

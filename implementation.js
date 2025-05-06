@@ -34,7 +34,7 @@ var biomes = [
         name: "Terrace",
         ident: "terrace",
         iconId: "grass",
-        color: 'rgb(90 180 100)',
+        color: 'rgb(20 80 160)',
     },
     {
         name: "Underground",
@@ -101,6 +101,18 @@ var biomes = [
         name: "Surfing",
         ident: "surfing",
         iconId: "surfing",
+        color: 'rgb(20 80 160)',
+    },
+    {
+        name: "World",
+        ident: "world",
+        iconId: "public",
+        color: 'rgb(220 50 0)',
+    },
+    {
+        name: "Level",
+        ident: "level",
+        iconId: "level",
         color: 'rgb(20 80 160)',
     },
 ];

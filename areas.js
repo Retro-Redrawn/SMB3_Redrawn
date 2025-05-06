@@ -4,7 +4,7 @@ var marioAreas = [
     title: "world1",
     ident: "world1",
     artist: "Juanito Medina",
-    artistImageOverride: "",
+    artistImageOverride: "Juanito",
     url: "https://x.com/juanitomedinart",
     animation: false,
     point: {
@@ -18,7 +18,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "world",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -138,7 +138,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "world",
     zoom: 2,
     teleporters: [],
     post_url: ""

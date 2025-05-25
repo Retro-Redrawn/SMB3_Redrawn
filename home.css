@@ -19,7 +19,7 @@ a{
 }
 .menu{
     color:#ddd;
-    background-color: #ff0505;
+    background-color: #e60012;
     position:fixed;
     left:0;
     top:0;
@@ -43,7 +43,7 @@ a{
     top:0;
     bottom:0;
     height:100%;
-    background-color: #096bff;
+    background-color: #a41515;
     
 }
 .menu.active{
@@ -61,7 +61,7 @@ a{
     right:-30px;
     width:30px;
     height:150px;
-    background-color: #096bff;
+    background-color: #a41515;
     top:0;
     bottom:0;
     display:block;
@@ -134,7 +134,7 @@ a{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #096bff;
+    background-color: #a41515;
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 24px;
@@ -154,12 +154,12 @@ a{
   }
   
   input:checked + .slider {
-    background-color: #003380;
+    background-color: #1450a0;
   }
 
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #003380;
+    box-shadow: 0 0 1px #1450a0;
   }
   
   input:checked + .slider:before {
@@ -183,18 +183,24 @@ a{
     border: 0px
 }
 .menu__tab.active{
-    background-color:#166beb;
+    background: repeating-linear-gradient(
+    45deg, 
+    #333333 0px,        
+    #333333 5px, 
+    #3d3d3d 5px,
+    #3d3d3d 10px
+    );
     color:#ddd;
     font-weight:bold;
 }
 
 .menu__tab:hover{
-    background-color:#27ccff;
+    background-color:#888;
     color:#ddd;
 }
 
 .menu__content{
-    background-color:#166beb;
+    background-color:#222;
     overflow-y:auto;
     max-height: 60vh;
 }
@@ -265,7 +271,7 @@ a{
     
 }
 .area:hover {
-    background-color: #222!important;
+    background-color: #888!important;
 }
 .area__header{
     cursor:pointer;

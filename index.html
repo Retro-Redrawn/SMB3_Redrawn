@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <meta property="og:title" content="Super Mario 3 Redrawn">
     <meta property="og:site_name" content="Retro Redrawn">
-    <meta property="og:url" content="http://retroredrawn.com/">
+    <meta property="og:url" content="https://retroredrawn.com/">
     <meta property="og:description" content="Super Mario 3 Redrawn is a collaborative art project by a group of passionate pixel artists from across the world.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="img\website\koholintredrawntitle12_100.png">
+    <meta property="og:image" content="https://retroredrawn.com/koholint/img/website/koholintredrawntitle12_100.png">
     <link rel="icon" type="image/png" href="favicon.png">
 
     <!--Google-->
@@ -19,13 +19,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--PIXI-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.12/pixi.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pixi-filters@4.2/dist/pixi-filters.js"></script>
     
     <!--Retro Redrawn: CSS-->
     <link rel="stylesheet" href="home.css">
 </head>
-<body>
+<body class="content">
     <div id="app">
         <canvas id="canvas"></canvas>
         <div id="error"></div>
@@ -33,7 +33,7 @@
             <div class="menu__button" onclick="toggleMenu()"></div>
             <div class="menu__inner">
                 <div class="menu__logo">
-                    <a href="https://twitter.com/PokemonRedrawn" title="Visit our Twitter!" target="_blank">
+                    <a href="https://bsky.app/profile/retroredrawn.bsky.social" title="Visit our BlueSky!" target="_blank">
                         <img src="img/website/smb3_logo_text.png" alt="Super Mario 3 Redrawn" draggable="false" />
                     </a>
                 </div>
@@ -64,7 +64,11 @@
                         <ul id="areas"></ul>
                     </div>
                     <div id="settings">
-                        <div><input type="checkbox" id="disableBlur"><label for="disableBlur">Disable Zoom Blur</label> </div><br>
+                        <hr>
+                        <div>
+                            <input class="settings__checkbox" type="checkbox" id="disableBlur"><label for="disableBlur">Disable Zoom Blur</label> <br><br>
+                            <input class="settings__checkbox" type="checkbox" id="areaBorderToggle" oninput="onAreaBorderToggled(this.checked)"><label for="areaBorderToggle">Hide Area Border</label> 
+                        </div><br>
                         <hr>
                         <div>
                             <label>Camera Speed</label><br>
@@ -80,7 +84,7 @@
                     </div>
                     <div id="about">
                         <p>Super Mario 3 Redrawn is a collaborative art project by a group of passionate pixel artists from across the world.</p>
-                        <p>The project is an artistic reimagining of Zelda: Links Awakening GBC with the same palette restrictions but without its hardware limitations.</p>
+                        <p>The project is an artistic reimagining of Super Mario 3 with the same palette restrictions as the NES release but without its hardware limitations.</p>
                         <hr>
                         Check out more projects at...
                         <div class="rrlogo">
@@ -89,15 +93,13 @@
                         <hr>
                         <p>Pan and zoom the map the same you would on sites like Google Maps.</p>
                         <p>Map requires WebGL compatible browsers - Chrome may require you <a href="https://www.howtogeek.com/412738/how-to-turn-hardware-acceleration-on-and-off-in-chrome/" target="_blank">enable hardware acceleration.</a></p>
-                        <p>Check out the <a href="https://github.com/vulture-boy/castlevaniaRedrawn">Github Page</a> for bug reports, feature requests, and to browse the code!</p>
+                        <p>Check out the <a href="https://github.com/vulture-boy/smb3_redrawn">Github Page</a> for bug reports, feature requests, and to browse the code!</p>
                         <hr>
                         <p><b>Credits</b></p>
                         <p>Project Organized by Blindeduif (<a href="https://linktr.ee/blindeduif" target="_blank">@Blindeduif</a>)</p>
-                        <p>Retro Redrawn administrated by <a href="https://twitter.com/foofarawr" target="_blank">@foofarawr</a></p>
-                        <p>Feature update by <a href="https://github.com/dodocommando" target="_blank">@Dodocommando</a>)</p>
-                        <p>Based on Castlevania Redrawn update by <a href="https://tysonmoll.ca" target="_blank">Tyson Moll (vvvultures)</a></p>
-                        <p>Based on Johto Redrawn, developed by <a href="https://twitter.com/hyperjerk" target="_blank">@HyperJerk</a></p>
-                        <p>Audio by Tori Roberts (<a href="https://twitter.com/torrybobs" target="_blank">@Torrybobs</a>)</p>
+                        <p>Retro Redrawn administrated by <a href="https://bsky.app/profile/foofarawr.bsky.social" target="_blank">@foofarawr</a></p>
+                        <p>Based on the Retro Redrawn core project by <a href="https://bsky.app/profile/hyperjerk.bsky.social" target="_blank">@HyperJerk</a> and <a href="https://bsky.app/profile/vvvultures.bsky.social" target="_blank">Tyson Moll (vvvultures)</a></p>
+                        <p>Audio by Tori Roberts (<a href="https://bsky.app/profile/did:plc:r7s7m4vev43y4eqbkvp3epvu" target="_blank">@Torrybobs</a>)</p>
                         <p>Project started by SamtheSalmon (<a href="https://x.com/SamThe_Salmon" target="_blank">@SametheSalmon</a>)</p>
                         <p>Any and all artists who contributed to this project!</p>
                     </div>
@@ -127,6 +129,7 @@
                 </div>
             </div>
         </div>
+      
         <div class="artist_mobile area__info__inner">
             <div class="area__info__img">
                 <a href="https://linktr.ee/tanupxl" target="_blank" title="Tanu">
@@ -138,6 +141,7 @@
         
             </div>
         </div>
+
         <div id="loading" class="active">
             <div>
                 <img src="img/website/smb3_logo_text.png" alt="Super Mario 3 Redrawn" draggable="false" />

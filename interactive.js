@@ -5,9 +5,11 @@
 *   Backend operations of the Redrawn Viewer. 
 *   Uses Implementation script for data related to a particular implementation.
 *
-*   Originally written by Jerky.
-*   Refactored for reuse by Tyson Moll (vvvvvvv), 2023.
+*   Authors: Jerky, Tyson Moll (vvvvvvv)
 *
+*   Contributors: dodocommando
+*
+*   Created in 2023
 */
 
 // Core
@@ -26,23 +28,24 @@ var currentPos = {x: 0, y: 0} //lerp
 // Map
 const NEW_STYLE_NAME = 'new';
 const OLD_STYLE_NAME = 'old';
-const GRID_CELL_IMAGE = 'img/website/grid_mario.png';
 var activeAreas = redrawnLayers[activeLayerIndex].areas  // Active array of areas (and initial area)
 var layerCount = redrawnLayers.length;  // Total number of layers
 var canvasDimensions = redrawnLayers[activeLayerIndex].canvasSize; // Dimension of active canvas
 var map = null;
 var mapImages = null;
+var mapZones = null;
 var currentMapStyle = NEW_STYLE_NAME;
 var viewport = null;
+var bordersDisabled = false;
 
 // Auto Highlight
 var autoHighlight = true;
 var highlightedArea = null;
 
 // Filters
-var blurFilter = null
+var blurFilter = null       // Motion blue used when zooming
 var bulgeFilter = null
-var colorFilter = null
+var colorFilter = null      // Used for fade-to-black sequences (e.g. in tour mode)
 
 // Interaction
 var mouseDown = false
@@ -84,8 +87,9 @@ var redrawsCount = redrawImages.length;    // Total number of redraw layers
 
 // Start up
 loadImages()
-window.addEventListener('wheel', onMouseWheel)
-window.addEventListener('resize', onResize)
+window.addEventListener('wheel', onMouseWheel);
+window.addEventListener('resize', onResize);
+window.addEventListener('keydown', onKeyDown);
 //
 
 /** Loads new & old images pertaining to a single layer.
@@ -218,15 +222,23 @@ function setupCanvas () {
     map.name = "Map";
     mapImages = new PIXI.Container()
     mapImages.name = "Map Images"
+    mapZones = new PIXI.Container()
+    mapZones.name = "Map Zones" 
     viewport = new PIXI.Container({width: window.innerWidth, height: window.innerHeight})
     viewport.name = "Viewport"
 
     buildMap()
-    var mapbg = new PIXI.TilingSprite(new PIXI.Texture.from(GRID_CELL_IMAGE), canvasDimensions.width, canvasDimensions.height)
-    mapbg.name = "Map Background"
-    mapbg.zIndex = -1
-    map.addChild(mapbg)
+
+    // Tiling Background
+    if (GRID_CELL_IMAGE != '') {
+        var mapbg = new PIXI.TilingSprite(new PIXI.Texture.from(GRID_CELL_IMAGE), canvasDimensions.width, canvasDimensions.height)
+        mapbg.name = "Map Background";
+        mapbg.zIndex = -1;
+        map.addChild(mapbg)
+    }
+    
     map.addChild(mapImages)
+    map.addChild(mapZones)
     var background = new PIXI.Graphics()
     background.name = "Background Fill"
     //background.beginFill(0x333333)
@@ -291,10 +303,7 @@ function buildMap () {
 }
 
 function toggleMapStyle () {
-    var selectRedrawn = document.getElementById('mapSelectRedrawn');
-    var selectOriginal = document.getElementById('mapSelectOriginal');
     var lastMapStyle = currentMapStyle;
-
 
     if (currentMapStyle == NEW_STYLE_NAME) 
         {
@@ -331,6 +340,31 @@ function getActiveLayerAreaImages(styleOverride = "") {
     return null 
 }
 
+/** Regenerates all area zones. */
+function RegenerateAreaZones() {
+
+    if (!activeAreas) {
+        return
+    }
+
+    // Cleanup existing zones, if any.
+    for (var i = 0; i < mapZones.children.length; i++) {
+        var zone = mapZones.children[i];
+        zone.destroy();
+    }
+    mapZones.removeChildren();
+
+    // Generate new zones
+    for (var i = 0; i < activeAreas.length; i++) {
+
+        // Prepare PIXI area tile
+        var area = activeAreas[i];
+        var activeImages = getActiveLayerAreaImages();
+        var areaImage = activeImages[i];
+        generateAreaZone(area, areaImage);
+    }
+}
+
 /** Prepares PIXI area tiles and their associated HTML artist information blocks. */
 function setUpAreas () {
     if (!activeAreas) {
@@ -341,14 +375,12 @@ function setUpAreas () {
     var areaList = document.querySelector('#areas')
     areaList.innerHTML = ''
 
+    RegenerateAreaZones();
+
     // Loop through all active areas
     for (var i = 0; i < activeAreas.length; i++) {
 
-        // Prepare PIXI area tile
         var area = activeAreas[i];
-        var activeImages = getActiveLayerAreaImages();
-        var areaImage = activeImages[i];
-        generateAreaZone(area, areaImage);
 
         // Get biome data
         var backgroundColor = 'rgb(0 0 0)';
@@ -377,8 +409,8 @@ function setUpAreas () {
             }
             var artistImgPath = artistImgDir + areaArtistImage + artistImgExtension;
         
-            var artistImageHTML = `<a href="${area.url}" target="_blank" title="${area.artist}">
-                <img src="${artistImgPath}" alt="${area.artist}" /></a>`;
+            var artistImageHTML = area.url ? `<a href="${area.url}" target="_blank" title="${area.artist}">
+                <img src="${artistImgPath}" alt="${area.artist}" /></a>` : `<img src="${artistImgPath}" alt="${area.artist}" />`;
         }
         
         // Prepare the HTML block corresponding to an area and its associated credts
@@ -408,31 +440,37 @@ function setUpAreas () {
     }
 }
 
+function UpdateFill(graphic, areaBox) {
+    graphic.beginFill(0xffffff, 0)
+    if (!bordersDisabled) { // Outline properties
+        graphic.lineStyle(4, 0xffffff, 0.5, 1, false)
+    }
+    else {
+        graphic.lineStyle(4, 0xffffff, 0, 1, false)
+    }
+    graphic.drawRect(areaBox.x, areaBox.y, areaBox.width, areaBox.height);
+    graphic.endFill()
+}
+
 /** Creates PIXI Graphics corresponding to new and old versions of an area. */
 function generateAreaZone (area, areaImage) {
     if (!area) { console.error('oopsie, no area'); return }
     if (!areaImage) { console.error('oopsie, no area image'); return }
-    var oldZone = new PIXI.Graphics()
-    oldZone.name = `ZONE: ${area.ident} (${OLD_STYLE_NAME})`
-    oldZone.beginFill(0xffffff, 0)
-    oldZone.lineStyle(4, 0xffffff, 0.5, 1)  // Highlight outline?
-    var oldAreaBox = getAreaBox(area, areaImage, OLD_STYLE_NAME);
-    oldZone.drawRect(oldAreaBox.x, oldAreaBox.y, oldAreaBox.width, oldAreaBox.height);
-    oldZone.endFill()
-    oldZone.alpha = 0
-    area.old_zone = oldZone
-    map.addChild(oldZone)
+    var oldZone = new PIXI.Graphics();
+    oldZone.name = `ZONE: ${area.ident} (${OLD_STYLE_NAME})`;
+    var areaBox = getAreaBox(area, areaImage, OLD_STYLE_NAME);
+    UpdateFill(oldZone, areaBox);
+    oldZone.alpha = 0;
+    area.old_zone = oldZone;
+    mapZones.addChild(oldZone);
 
-    var newZone = new PIXI.Graphics()
-    newZone.name = `ZONE: ${area.ident} (${NEW_STYLE_NAME})`
-    newZone.beginFill(0xffffff, 0)
-    newZone.lineStyle(4, 0xffffff, 0.5, 1)
-    var newAreaBox = getAreaBox(area, areaImage, NEW_STYLE_NAME);
-    newZone.drawRect(newAreaBox.x, newAreaBox.y, newAreaBox.width, newAreaBox.height);
-    newZone.endFill()
-    newZone.alpha = 0
-    area.new_zone = newZone
-    map.addChild(newZone)
+    var newZone = new PIXI.Graphics();
+    newZone.name = `ZONE: ${area.ident} (${NEW_STYLE_NAME})`;
+    areaBox = getAreaBox(area, areaImage, NEW_STYLE_NAME);
+    UpdateFill(newZone, areaBox);
+    newZone.alpha = 0;
+    area.new_zone = newZone;
+    mapZones.addChild(newZone);
 }
 
 function hideAreaZone (area) {
@@ -613,6 +651,15 @@ function blurIsDisabled () {
     return document.querySelector('#disableBlur').checked
 }
 
+/** Called when the area border visibility DOM is toggled.
+ * 
+ * @param isHidden {Boolean} whether the border should be hidden.
+ */
+function onAreaBorderToggled(isHidden) {
+    bordersDisabled = isHidden;
+    RegenerateAreaZones();
+}
+
 /** Callback occurring when a drag action starts. */
 function onDragStart () {
     previousTouch = null
@@ -645,7 +692,8 @@ function changeTab (n) {
 
 function onClick (e) {
     if (!dragging && !cameraAnimation.playing) {
-        zoomCenter = { x: Math.round(-(e.data.global.x - map.x) + window.innerWidth / 2), y: Math.round(-(e.data.global.y - map.y) + window.innerHeight / 2) }
+        zoomCenter = { x: Math.round(-(e.data.global.x - map.x) + window.innerWidth / 2), 
+                        y: Math.round(-(e.data.global.y - map.y) + window.innerHeight / 2) }
         currentPos = { x: map.x, y: map.y }
         dragVelocity = { x: 0, y: 0 }
     }
@@ -858,6 +906,7 @@ function focusOnArea (a) {
     }
 }
 
+/** Opens an area in the DOM menu of the viewer. */
 function openAreaInDOM (a) {
     var area = a
     if (typeof a === 'string') {
@@ -875,9 +924,10 @@ function openAreaInDOM (a) {
             }       
         }
     }
-    updateMobileArtist(area);
-}
 
+    updateMobileArtist(area);
+
+}
 function updateMobileArtist(area) {
     
     var areaArtist = area.artist.replace('@', '');
@@ -889,9 +939,11 @@ function updateMobileArtist(area) {
         ${area.post_url ? `<a href="${area.post_url}" target="_blank" title="View Post">[View Post]</a>` : ''}
     `;
     var containerImage = document.querySelector('.artist_mobile .area__info__img');
-    var a = document.querySelector('.artist_mobile .area__info__img a');
-    a.href = area.url;
-    a.title = area.artist;
+    var a = document.querySelector('.artist_mobile .area__info__img');
+    a.innerHTML = `
+        ${area.url ? `<a href="${area.url}" target="_blank" title="${area.artist}">
+                <img src="${artistImgPath}" alt="${area.artist}" /></a>` : `<img src="${artistImgPath}" alt="${area.artist}" />`}
+    `;
     var image = document.querySelector('.artist_mobile .area__info__img img');
 
     var areaArtistImage = area.artistImageOverride;
@@ -909,6 +961,14 @@ function updateMobileArtist(area) {
     image.onerror = function(){
         containerImage.style.display = 'none';
     };
+}
+
+/** Event occurring when a keyboard key is pressed. */
+function onKeyDown(evt) {
+
+    if (evt.keyCode == 32) { // Space Bar
+        document.querySelector("#mapSelectRedrawn").select();
+    }
 }
 
 // #region Tour Methods

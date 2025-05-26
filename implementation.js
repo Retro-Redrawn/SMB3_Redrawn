@@ -5,14 +5,19 @@
 *   Frontend data container of the Redrawn Viewer. 
 *   Contains implementation data specific to a Redrawn project.
 *
-*   by Tyson Moll (vvvvvvv), 2023.
-*   I touched this too >_> Blinde
+*   Author: Tyson Moll (vvvvvvv)
+*   
+*   Editors: Blinde
+*
+*   Created in 2023
 */
 
 // Directories
 var artistImgDir = "img/profiles/";
 var artistImgExtension = '.png';  // Image extension for artist images.
 // (having JavaScript self-determine if an image exists without a particular extension is difficult)
+
+const GRID_CELL_IMAGE = 'img/website/grid_mario.png'; // Tiled background image (blank if none)
 
 // Audio
 var bgmTrack = null;
@@ -21,7 +26,7 @@ var bgmTrack = null;
 var activeLayerIndex = 0;           // Currently active layer index (and initial index)
 var redrawnLayers = [
     {
-        name: "game", //foldername?
+        name: "game", // Image directory name
         canvasSize: {width: 2655, height: 3400},
         areas: marioAreas
     }

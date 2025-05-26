@@ -1,6 +1,6 @@
-# RETRO REDRAWN - Koholint Redrawn
+# RETRO REDRAWN - Super Mario 3 Redrawn
 
-Repository for the Koholint Redrawn project.
+Repository for the Super Mario 3 Redrawn project.
 
 The base code was originally programmed by Jerky (@Hyperjerk) for the Retro Redrawn Kanto and Johto projects.
 This version on GitHub was created and refactored by Tyson Moll for reuse and repurpose (https://tysonmoll.ca/).

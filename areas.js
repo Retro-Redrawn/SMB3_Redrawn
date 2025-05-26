@@ -1,7 +1,7 @@
 var marioAreas = [
   {
     order: 1,
-    title: "world1",
+    title: "World 1",
     ident: "world1",
     artist: "Juanito Medina",
     artistImageOverride: "Juanito",
@@ -121,7 +121,7 @@ var marioAreas = [
   },
   {
     order: 7,
-    title: "world2",
+    title: "World 2",
     ident: "world2",
     artist: "NekuDemon",
     artistImageOverride: "",
@@ -173,7 +173,7 @@ var marioAreas = [
     ident: "2-2",
     artist: "Wortel",
     artistImageOverride: "",
-    url: "https://cringe.ovh/",
+    url: "",
     animation: false,
     point: {
       x: 1700,
@@ -197,7 +197,7 @@ var marioAreas = [
     ident: "2-3",
     artist: "Marmot",
     artistImageOverride: "",
-    url: "https://cringe.ovh/",
+    url: "",
     animation: false,
     point: {
       x: 2000,
@@ -221,7 +221,7 @@ var marioAreas = [
     ident: "2-4",
     artist: "Chren",
     artistImageOverride: "",
-    url: "https://cringe.ovh/",
+    url: "",
     animation: false,
     point: {
       x: 2300,

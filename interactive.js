@@ -302,6 +302,7 @@ function buildMap () {
     }
 }
 
+/** Switches between Old and New map styles */
 function toggleMapStyle () {
     var lastMapStyle = currentMapStyle;
 
@@ -440,16 +441,14 @@ function setUpAreas () {
     }
 }
 
+/** Updates the fill operation performed underneath zones (i.e. the outline) */
 function UpdateFill(graphic, areaBox) {
-    graphic.beginFill(0xffffff, 0)
     if (!bordersDisabled) { // Outline properties
+        graphic.beginFill(0xffffff, 0)
         graphic.lineStyle(4, 0xffffff, 0.5, 1, false)
+        graphic.drawRect(areaBox.x, areaBox.y, areaBox.width, areaBox.height);
+        graphic.endFill()
     }
-    else {
-        graphic.lineStyle(4, 0xffffff, 0, 1, false)
-    }
-    graphic.drawRect(areaBox.x, areaBox.y, areaBox.width, areaBox.height);
-    graphic.endFill()
 }
 
 /** Creates PIXI Graphics corresponding to new and old versions of an area. */

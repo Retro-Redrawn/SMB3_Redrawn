@@ -20,7 +20,7 @@ var artistImgExtension = '.png';  // Image extension for artist images.
 const GRID_CELL_IMAGE = 'img/website/grid_mario.png'; // Tiled background image (blank if none)
 
 // Audio
-var bgmTrack = null;
+var bgmTrack = 'audio/overworld.mp3';
 
 /** Content layers in the Redrawn */
 var activeLayerIndex = 0;           // Currently active layer index (and initial index)

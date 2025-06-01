@@ -6,17 +6,11 @@
 *   Contains implementation data specific to a Redrawn project.
 *
 *   Author: Tyson Moll (vvvvvvv)
-*   
-*   Editors: Blinde
 *
 *   Created in 2023
 */
 
 // Directories
-var artistImgDir = "img/profiles/";
-var artistImgExtension = '.png';  // Image extension for artist images.
-// (having JavaScript self-determine if an image exists without a particular extension is difficult)
-
 const GRID_CELL_IMAGE = 'img/website/grid_mario.png'; // Tiled background image (blank if none)
 
 // Audio
@@ -26,14 +20,17 @@ var bgmTrack = 'audio/overworld.mp3';
 var activeLayerIndex = 0;           // Currently active layer index (and initial index)
 var redrawnLayers = [
     {
-        name: "game", // Image directory name
+        name: "game", // name of folder containing screens for a layer
         canvasSize: {width: 2655, height: 3400},
         areas: marioAreas
     }
 ];
 
-/** Biome Data (Screen icons) */
-// see icon list here >> https://fonts.google.com/icons
+/** Biome Data (Screen icons) 
+ * (to be updated per the organizer's tastes)
+ * 
+ * see icon list here >> https://fonts.google.com/icons
+*/
 var biomes = [
     {
         name: "Terrace",
@@ -106,18 +103,6 @@ var biomes = [
         name: "Surfing",
         ident: "surfing",
         iconId: "surfing",
-        color: 'rgb(20 80 160)',
-    },
-    {
-        name: "World",
-        ident: "world",
-        iconId: "public",
-        color: 'rgb(220 50 0)',
-    },
-    {
-        name: "Level",
-        ident: "level",
-        iconId: "level",
         color: 'rgb(20 80 160)',
     },
 ];

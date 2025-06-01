@@ -2,7 +2,7 @@ var marioAreas = [
   {
     order: 1,
     title: "World 1",
-    ident: "world1",
+    ident: "1-world",
     artist: "Juanito Medina",
     artistImageOverride: "Juanito",
     url: "https://x.com/juanitomedinart",
@@ -218,7 +218,7 @@ var marioAreas = [
   {
     order: 10,
     title: "1-Fortress",
-    ident: "1-f1",
+    ident: "1-f",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -290,7 +290,7 @@ var marioAreas = [
   {
     order: 13,
     title: "World 2",
-    ident: "world2",
+    ident: "2-world",
     artist: "NekuDemon",
     artistImageOverride: "",
     url: "",
@@ -506,7 +506,7 @@ var marioAreas = [
   {
     order: 22,
     title: "2-Fortress",
-    ident: "2-f1",
+    ident: "2-f",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -626,7 +626,7 @@ var marioAreas = [
   {
     order: 27,
     title: "World 3",
-    ident: "world3",
+    ident: "3-world",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -1034,7 +1034,7 @@ var marioAreas = [
   {
     order: 42,
     title: "World 4",
-    ident: "world4",
+    ident: "4-world",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -1370,7 +1370,7 @@ var marioAreas = [
   {
     order: 56,
     title: "World 5",
-    ident: "world5",
+    ident: "5-world",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -1802,7 +1802,7 @@ var marioAreas = [
   {
     order: 75,
     title: "World 6",
-    ident: "world6",
+    ident: "6-world",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -2258,7 +2258,7 @@ var marioAreas = [
   {
     order: 93,
     title: "World 7",
-    ident: "world7",
+    ident: "7-world",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -2642,7 +2642,7 @@ var marioAreas = [
   {
     order: 109,
     title: "World 8",
-    ident: "world8",
+    ident: "8-world",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -2930,7 +2930,7 @@ var marioAreas = [
   {
     order: 123,
     title: "World 9 (Warp Zone)",
-    ident: "world9-warp",
+    ident: "b-warpzone",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -2978,7 +2978,7 @@ var marioAreas = [
   {
     order: 124,
     title: "Boss: Boom Boom",
-    ident: "b-boomboom",
+    ident: "8-boomboom",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -3002,7 +3002,7 @@ var marioAreas = [
   {
     order: 125,
     title: "Boss: Larry",
-    ident: "b-larry",
+    ident: "1-larry",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -3026,7 +3026,7 @@ var marioAreas = [
   {
     order: 126,
     title: "Boss: Morton",
-    ident: "b-morton",
+    ident: "2-morton",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -3050,7 +3050,7 @@ var marioAreas = [
   {
     order: 127,
     title: "Boss: Wendy",
-    ident: "b-wendy",
+    ident: "3-wendy",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -3074,7 +3074,7 @@ var marioAreas = [
   {
     order: 128,
     title: "Boss: Iggy",
-    ident: "b-iggy",
+    ident: "4-iggy",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -3098,7 +3098,7 @@ var marioAreas = [
   {
     order: 129,
     title: "Boss: Roy",
-    ident: "b-roy",
+    ident: "5-roy",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -3122,7 +3122,7 @@ var marioAreas = [
   {
     order: 130,
     title: "Boss: Lemmy",
-    ident: "b-lemmy",
+    ident: "6-lemmy",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -3146,7 +3146,7 @@ var marioAreas = [
   {
     order: 131,
     title: "Boss: Ludwig",
-    ident: "b-ludwig",
+    ident: "7-ludwig",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -3170,7 +3170,7 @@ var marioAreas = [
   {
     order: 132,
     title: "Boss: Bowser",
-    ident: "b-bowser",
+    ident: "8-bowser",
     artist: "NULL",
     artistImageOverride: "",
     url: "",
@@ -3243,6 +3243,30 @@ var marioAreas = [
     order: 135,
     title: "Treasure Ship",
     ident: "b-treasureship",
+    artist: "NULL",
+    artistImageOverride: "",
+    url: "",
+    animation: false,
+    point: {
+      x: 1234,
+      y: 567
+    },
+    offset: {
+      x: null,
+      y: null,
+      width: null,
+      height: null
+    },
+    pan: "horizontal",
+    type: "terrace",
+    zoom: 2,
+    teleporters: [],
+    post_url: ""
+  },
+  {
+    order: 135,
+    title: "Ending",
+    ident: "8b-end",
     artist: "NULL",
     artistImageOverride: "",
     url: "",

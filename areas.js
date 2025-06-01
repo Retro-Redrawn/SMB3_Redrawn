@@ -25,7 +25,7 @@ var marioAreas = [
     order: 2,
     title: "1-1",
     ident: "1-1",
-    artistId: "UNDF",
+    artistId: "STEV",
     animation: false,
     point: {
       x: 100,
@@ -113,7 +113,7 @@ var marioAreas = [
     order: 7,
     title: "1-5",
     ident: "1-5",
-    artistId: "UNDF",
+    artistId: "STEV",
     animation: false,
     point: {
       x: 1234,
@@ -135,7 +135,7 @@ var marioAreas = [
     order: 8,
     title: "1-6 (1)",
     ident: "1-6",
-    artistId: "UNDF",
+    artistId: "REES",
     animation: false,
     point: {
       x: 1234,
@@ -157,7 +157,7 @@ var marioAreas = [
     order: 8,
     title: "1-6 (2)",
     ident: "1-6b",
-    artistId: "UNDF",
+    artistId: "YAMM",
     animation: false,
     point: {
       x: 1234,
@@ -179,7 +179,7 @@ var marioAreas = [
     order: 9,
     title: "1-Airship",
     ident: "1-A",
-    artistId: "UNDF",
+    artistId: "SJPI",
     animation: false,
     point: {
       x: 1234,
@@ -201,7 +201,7 @@ var marioAreas = [
     order: 10,
     title: "1-Fortress",
     ident: "1-f",
-    artistId: "UNDF",
+    artistId: "BROK",
     animation: false,
     point: {
       x: 1234,
@@ -223,7 +223,7 @@ var marioAreas = [
     order: 11,
     title: "1-Hammer Bros.",
     ident: "1-h",
-    artistId: "UNDF",
+    artistId: "TETR",
     animation: false,
     point: {
       x: 1234,
@@ -245,7 +245,7 @@ var marioAreas = [
     order: 12,
     title: "1-Throne",
     ident: "1-t",
-    artistId: "UNDF",
+    artistId: "RATA",
     animation: false,
     point: {
       x: 1234,
@@ -377,7 +377,7 @@ var marioAreas = [
     order: 18,
     title: "2-5",
     ident: "2-5",
-    artistId: "UNDF",
+    artistId: "WUCH",
     animation: false,
     point: {
       x: 1234,
@@ -399,7 +399,7 @@ var marioAreas = [
     order: 19,
     title: "2-Airship",
     ident: "2-a",
-    artistId: "UNDF",
+    artistId: "MIRA",
     animation: false,
     point: {
       x: 1234,
@@ -421,7 +421,7 @@ var marioAreas = [
     order: 20,
     title: "2-Boomerang Bros. 1",
     ident: "2-bb1",
-    artistId: "UNDF",
+    artistId: "STRA",
     animation: false,
     point: {
       x: 1234,
@@ -443,7 +443,7 @@ var marioAreas = [
     order: 21,
     title: "2-Boomerang Bros. 2",
     ident: "2-bb2",
-    artistId: "UNDF",
+    artistId: "META",
     animation: false,
     point: {
       x: 1234,
@@ -465,7 +465,7 @@ var marioAreas = [
     order: 22,
     title: "2-Fortress",
     ident: "2-f",
-    artistId: "UNDF",
+    artistId: "STEV",
     animation: false,
     point: {
       x: 1234,
@@ -487,7 +487,7 @@ var marioAreas = [
     order: 23,
     title: "2-Fire Bros.",
     ident: "2-fb",
-    artistId: "UNDF",
+    artistId: "YOLK",
     animation: false,
     point: {
       x: 1234,
@@ -509,7 +509,7 @@ var marioAreas = [
     order: 24,
     title: "2-Pyramid",
     ident: "2-p",
-    artistId: "UNDF",
+    artistId: "DEWN",
     animation: false,
     point: {
       x: 1234,
@@ -531,7 +531,7 @@ var marioAreas = [
     order: 25,
     title: "2-Quicksand",
     ident: "2-q",
-    artistId: "UNDF",
+    artistId: "LAMI",
     animation: false,
     point: {
       x: 1234,
@@ -553,7 +553,7 @@ var marioAreas = [
     order: 26,
     title: "2-Throne",
     ident: "2-t",
-    artistId: "UNDF",
+    artistId: "SETH",
     animation: false,
     point: {
       x: 1234,
@@ -575,7 +575,7 @@ var marioAreas = [
     order: 27,
     title: "World 3",
     ident: "3-world",
-    artistId: "UNDF",
+    artistId: "META",
     animation: false,
     point: {
       x: 1234,
@@ -597,7 +597,7 @@ var marioAreas = [
     order: 28,
     title: "3-1",
     ident: "3-1",
-    artistId: "UNDF",
+    artistId: "JAMM",
     animation: false,
     point: {
       x: 1234,
@@ -619,7 +619,7 @@ var marioAreas = [
     order: 29,
     title: "3-2",
     ident: "3-2",
-    artistId: "UNDF",
+    artistId: "BLIN",
     animation: false,
     point: {
       x: 1234,
@@ -641,7 +641,7 @@ var marioAreas = [
     order: 30,
     title: "3-3",
     ident: "3-3",
-    artistId: "UNDF",
+    artistId: "PIXE",
     animation: false,
     point: {
       x: 1234,
@@ -663,7 +663,7 @@ var marioAreas = [
     order: 31,
     title: "3-4",
     ident: "3-4",
-    artistId: "UNDF",
+    artistId: "ACHA",
     animation: false,
     point: {
       x: 1234,
@@ -685,7 +685,7 @@ var marioAreas = [
     order: 32,
     title: "3-5",
     ident: "3-5",
-    artistId: "UNDF",
+    artistId: "YUMI",
     animation: false,
     point: {
       x: 1234,
@@ -707,7 +707,7 @@ var marioAreas = [
     order: 33,
     title: "3-6",
     ident: "3-6",
-    artistId: "UNDF",
+    artistId: "BARO",
     animation: false,
     point: {
       x: 1234,
@@ -729,7 +729,7 @@ var marioAreas = [
     order: 34,
     title: "3-7",
     ident: "3-7",
-    artistId: "UNDF",
+    artistId: "NEKO",
     animation: false,
     point: {
       x: 1234,
@@ -751,7 +751,7 @@ var marioAreas = [
     order: 35,
     title: "3-8",
     ident: "3-8",
-    artistId: "UNDF",
+    artistId: "MEGA",
     animation: false,
     point: {
       x: 1234,
@@ -773,7 +773,7 @@ var marioAreas = [
     order: 36,
     title: "3-9 (1)",
     ident: "3-9",
-    artistId: "UNDF",
+    artistId: "ARKF",
     animation: false,
     point: {
       x: 1234,
@@ -795,7 +795,7 @@ var marioAreas = [
     order: 36,
     title: "3-9 (2)",
     ident: "3-9b",
-    artistId: "UNDF",
+    artistId: "RUDY",
     animation: false,
     point: {
       x: 1234,
@@ -817,7 +817,7 @@ var marioAreas = [
     order: 37,
     title: "3-Airship",
     ident: "3-a",
-    artistId: "UNDF",
+    artistId: "UNSI",
     animation: false,
     point: {
       x: 1234,
@@ -839,7 +839,7 @@ var marioAreas = [
     order: 37,
     title: "3-Fortress 1",
     ident: "3-f1",
-    artistId: "UNDF",
+    artistId: "BACK",
     animation: false,
     point: {
       x: 1234,
@@ -861,7 +861,7 @@ var marioAreas = [
     order: 38,
     title: "3-Fortress 2",
     ident: "3-f2",
-    artistId: "UNDF",
+    artistId: "PIKE",
     animation: false,
     point: {
       x: 1234,
@@ -883,7 +883,7 @@ var marioAreas = [
     order: 39,
     title: "3-Hammer Bros. 1",
     ident: "3-h1",
-    artistId: "UNDF",
+    artistId: "FOOF",
     animation: false,
     point: {
       x: 1234,
@@ -905,7 +905,7 @@ var marioAreas = [
     order: 40,
     title: "3-Hammer Bros. 2",
     ident: "3-h2",
-    artistId: "UNDF",
+    artistId: "CORB",
     animation: false,
     point: {
       x: 1234,
@@ -927,7 +927,7 @@ var marioAreas = [
     order: 41,
     title: "3-Throne",
     ident: "3-t",
-    artistId: "UNDF",
+    artistId: "KOHE",
     animation: false,
     point: {
       x: 1234,
@@ -949,7 +949,7 @@ var marioAreas = [
     order: 42,
     title: "World 4",
     ident: "4-world",
-    artistId: "UNDF",
+    artistId: "BRAN",
     animation: false,
     point: {
       x: 1234,
@@ -971,7 +971,7 @@ var marioAreas = [
     order: 43,
     title: "4-1",
     ident: "4-1",
-    artistId: "UNDF",
+    artistId: "LODE",
     animation: false,
     point: {
       x: 1234,
@@ -993,7 +993,7 @@ var marioAreas = [
     order: 44,
     title: "4-2",
     ident: "4-2",
-    artistId: "UNDF",
+    artistId: "THED",
     animation: false,
     point: {
       x: 1234,
@@ -1015,7 +1015,7 @@ var marioAreas = [
     order: 45,
     title: "4-3",
     ident: "4-3",
-    artistId: "UNDF",
+    artistId: "META",
     animation: false,
     point: {
       x: 1234,
@@ -1037,7 +1037,7 @@ var marioAreas = [
     order: 46,
     title: "4-4",
     ident: "4-4",
-    artistId: "UNDF",
+    artistId: "LYZE",
     animation: false,
     point: {
       x: 1234,
@@ -1059,7 +1059,7 @@ var marioAreas = [
     order: 47,
     title: "4-5",
     ident: "4-5",
-    artistId: "UNDF",
+    artistId: "KERR",
     animation: false,
     point: {
       x: 1234,
@@ -1081,7 +1081,7 @@ var marioAreas = [
     order: 48,
     title: "4-6",
     ident: "4-6",
-    artistId: "UNDF",
+    artistId: "DEWN",
     animation: false,
     point: {
       x: 1234,
@@ -1103,7 +1103,7 @@ var marioAreas = [
     order: 49,
     title: "4-Airship",
     ident: "4-a",
-    artistId: "UNDF",
+    artistId: "DAYD",
     animation: false,
     point: {
       x: 1234,
@@ -1125,7 +1125,7 @@ var marioAreas = [
     order: 50,
     title: "4-Fortress 1",
     ident: "4-f1",
-    artistId: "UNDF",
+    artistId: "RAMI",
     animation: false,
     point: {
       x: 1234,
@@ -1147,7 +1147,7 @@ var marioAreas = [
     order: 51,
     title: "4-Fortress 2",
     ident: "4-f2",
-    artistId: "UNDF",
+    artistId: "PJBG",
     animation: false,
     point: {
       x: 1234,
@@ -1169,7 +1169,7 @@ var marioAreas = [
     order: 52,
     title: "4-Hammer Bros. 1",
     ident: "4-h1",
-    artistId: "UNDF",
+    artistId: "FOCA",
     animation: false,
     point: {
       x: 1234,
@@ -1191,7 +1191,7 @@ var marioAreas = [
     order: 53,
     title: "4-Hammer Bros. 2",
     ident: "4-h2",
-    artistId: "UNDF",
+    artistId: "STEV",
     animation: false,
     point: {
       x: 1234,
@@ -1213,7 +1213,7 @@ var marioAreas = [
     order: 54,
     title: "4-Hammer Bros. 3",
     ident: "4-h3",
-    artistId: "UNDF",
+    artistId: "FRY0",
     animation: false,
     point: {
       x: 1234,
@@ -1235,7 +1235,7 @@ var marioAreas = [
     order: 55,
     title: "4-Throne",
     ident: "4-t",
-    artistId: "UNDF",
+    artistId: "T3NS",
     animation: false,
     point: {
       x: 1234,
@@ -1257,7 +1257,7 @@ var marioAreas = [
     order: 56,
     title: "World 5",
     ident: "5-world",
-    artistId: "UNDF",
+    artistId: "AC2D",
     animation: false,
     point: {
       x: 1234,
@@ -1279,7 +1279,7 @@ var marioAreas = [
     order: 57,
     title: "5-1",
     ident: "5-1",
-    artistId: "UNDF",
+    artistId: "AC2D",
     animation: false,
     point: {
       x: 1234,
@@ -1301,7 +1301,7 @@ var marioAreas = [
     order: 58,
     title: "5-2",
     ident: "5-2",
-    artistId: "UNDF",
+    artistId: "KING",
     animation: false,
     point: {
       x: 1234,
@@ -1323,7 +1323,7 @@ var marioAreas = [
     order: 59,
     title: "5-3",
     ident: "5-3",
-    artistId: "UNDF",
+    artistId: "UNSE",
     animation: false,
     point: {
       x: 1234,
@@ -1345,7 +1345,7 @@ var marioAreas = [
     order: 60,
     title: "5-4",
     ident: "5-4",
-    artistId: "UNDF",
+    artistId: "MECH",
     animation: false,
     point: {
       x: 1234,
@@ -1367,7 +1367,7 @@ var marioAreas = [
     order: 61,
     title: "5-5",
     ident: "5-5",
-    artistId: "UNDF",
+    artistId: "PEDR",
     animation: false,
     point: {
       x: 1234,
@@ -1389,7 +1389,7 @@ var marioAreas = [
     order: 62,
     title: "5-6",
     ident: "5-6",
-    artistId: "UNDF",
+    artistId: "ETO2",
     animation: false,
     point: {
       x: 1234,
@@ -1411,7 +1411,7 @@ var marioAreas = [
     order: 63,
     title: "5-7",
     ident: "5-7",
-    artistId: "UNDF",
+    artistId: "BLIN_2",
     animation: false,
     point: {
       x: 1234,
@@ -1433,7 +1433,7 @@ var marioAreas = [
     order: 64,
     title: "5-8",
     ident: "5-8",
-    artistId: "UNDF",
+    artistId: "BRAN",
     animation: false,
     point: {
       x: 1234,
@@ -1455,7 +1455,7 @@ var marioAreas = [
     order: 65,
     title: "5-9",
     ident: "5-9",
-    artistId: "UNDF",
+    artistId: "META",
     animation: false,
     point: {
       x: 1234,
@@ -1477,7 +1477,7 @@ var marioAreas = [
     order: 66,
     title: "5-Airship",
     ident: "5-a",
-    artistId: "UNDF",
+    artistId: "MARI",
     animation: false,
     point: {
       x: 1234,
@@ -1499,7 +1499,7 @@ var marioAreas = [
     order: 68,
     title: "5-Fortress 1",
     ident: "5-f1",
-    artistId: "UNDF",
+    artistId: "BLIN_2",
     animation: false,
     point: {
       x: 1234,
@@ -1521,7 +1521,7 @@ var marioAreas = [
     order: 69,
     title: "5-Fortress 2",
     ident: "5-f2",
-    artistId: "UNDF",
+    artistId: "DEMA",
     animation: false,
     point: {
       x: 1234,
@@ -1543,7 +1543,7 @@ var marioAreas = [
     order: 70,
     title: "5-Hammer Bros. 1",
     ident: "5-h1",
-    artistId: "UNDF",
+    artistId: "AGUA",
     animation: false,
     point: {
       x: 1234,
@@ -1565,7 +1565,7 @@ var marioAreas = [
     order: 71,
     title: "5-Hammer Bros. 2",
     ident: "5-h2",
-    artistId: "UNDF",
+    artistId: "GLIT",
     animation: false,
     point: {
       x: 1234,
@@ -1587,7 +1587,7 @@ var marioAreas = [
     order: 72,
     title: "5-Hammer Bros. 3",
     ident: "5-h3",
-    artistId: "UNDF",
+    artistId: "HAYW",
     animation: false,
     point: {
       x: 1234,
@@ -1609,7 +1609,7 @@ var marioAreas = [
     order: 73,
     title: "5-Tower",
     ident: "5-tower",
-    artistId: "UNDF",
+    artistId: "BLAM",
     animation: false,
     point: {
       x: 1234,
@@ -1631,7 +1631,7 @@ var marioAreas = [
     order: 74,
     title: "5-Throne",
     ident: "5-t",
-    artistId: "UNDF",
+    artistId: "THAT",
     animation: false,
     point: {
       x: 1234,
@@ -1653,7 +1653,7 @@ var marioAreas = [
     order: 75,
     title: "World 6",
     ident: "6-world",
-    artistId: "UNDF",
+    artistId: "SPAC_2",
     animation: false,
     point: {
       x: 1234,
@@ -1675,7 +1675,7 @@ var marioAreas = [
     order: 76,
     title: "6-1",
     ident: "6-1",
-    artistId: "UNDF",
+    artistId: "LYZE",
     animation: false,
     point: {
       x: 1234,
@@ -1697,7 +1697,7 @@ var marioAreas = [
     order: 77,
     title: "6-2",
     ident: "6-2",
-    artistId: "UNDF",
+    artistId: "WUKO",
     animation: false,
     point: {
       x: 1234,
@@ -1719,7 +1719,7 @@ var marioAreas = [
     order: 78,
     title: "6-3",
     ident: "6-3",
-    artistId: "UNDF",
+    artistId: "JOUL",
     animation: false,
     point: {
       x: 1234,
@@ -1741,7 +1741,7 @@ var marioAreas = [
     order: 79,
     title: "6-4",
     ident: "6-4",
-    artistId: "UNDF",
+    artistId: "MHBA",
     animation: false,
     point: {
       x: 1234,
@@ -1763,7 +1763,7 @@ var marioAreas = [
     order: 80,
     title: "6-5",
     ident: "6-5",
-    artistId: "UNDF",
+    artistId: "MEGA",
     animation: false,
     point: {
       x: 1234,
@@ -1785,7 +1785,7 @@ var marioAreas = [
     order: 81,
     title: "6-6",
     ident: "6-6",
-    artistId: "UNDF",
+    artistId: "DANV",
     animation: false,
     point: {
       x: 1234,
@@ -1807,7 +1807,7 @@ var marioAreas = [
     order: 81,
     title: "6-7",
     ident: "6-7",
-    artistId: "UNDF",
+    artistId: "LYZE",
     animation: false,
     point: {
       x: 1234,
@@ -1829,7 +1829,7 @@ var marioAreas = [
     order: 82,
     title: "6-8",
     ident: "6-8",
-    artistId: "UNDF",
+    artistId: "VICT",
     animation: false,
     point: {
       x: 1234,
@@ -1851,7 +1851,7 @@ var marioAreas = [
     order: 83,
     title: "6-9",
     ident: "6-9",
-    artistId: "UNDF",
+    artistId: "NINE",
     animation: false,
     point: {
       x: 1234,
@@ -1873,7 +1873,7 @@ var marioAreas = [
     order: 84,
     title: "6-10",
     ident: "6-10",
-    artistId: "UNDF",
+    artistId: "INTE",
     animation: false,
     point: {
       x: 1234,
@@ -1895,7 +1895,7 @@ var marioAreas = [
     order: 85,
     title: "6-Airship",
     ident: "6-a",
-    artistId: "UNDF",
+    artistId: "HAYW",
     animation: false,
     point: {
       x: 1234,
@@ -1917,7 +1917,7 @@ var marioAreas = [
     order: 86,
     title: "6-Fortress 1",
     ident: "6-f1",
-    artistId: "UNDF",
+    artistId: "CHJA",
     animation: false,
     point: {
       x: 1234,
@@ -1939,7 +1939,7 @@ var marioAreas = [
     order: 87,
     title: "6-Fortress 2",
     ident: "6-f2",
-    artistId: "UNDF",
+    artistId: "WILP",
     animation: false,
     point: {
       x: 1234,
@@ -1961,7 +1961,7 @@ var marioAreas = [
     order: 88,
     title: "6-Fortress 3",
     ident: "6-f3",
-    artistId: "UNDF",
+    artistId: "AC2D",
     animation: false,
     point: {
       x: 1234,
@@ -1983,7 +1983,7 @@ var marioAreas = [
     order: 89,
     title: "6-Hammer Bros. 1",
     ident: "6-h1",
-    artistId: "UNDF",
+    artistId: "MIRA",
     animation: false,
     point: {
       x: 1234,
@@ -2005,7 +2005,7 @@ var marioAreas = [
     order: 90,
     title: "6-Hammer Bros. 2",
     ident: "6-h2",
-    artistId: "UNDF",
+    artistId: "ROBS",
     animation: false,
     point: {
       x: 1234,
@@ -2027,7 +2027,7 @@ var marioAreas = [
     order: 91,
     title: "6-Hammer Bros. 3",
     ident: "6-h3",
-    artistId: "UNDF",
+    artistId: "ATTI",
     animation: false,
     point: {
       x: 1234,
@@ -2049,7 +2049,7 @@ var marioAreas = [
     order: 92,
     title: "6-Throne",
     ident: "6-t",
-    artistId: "UNDF",
+    artistId: "ASHE",
     animation: false,
     point: {
       x: 1234,
@@ -2071,7 +2071,7 @@ var marioAreas = [
     order: 93,
     title: "World 7",
     ident: "7-world",
-    artistId: "UNDF",
+    artistId: "STRA",
     animation: false,
     point: {
       x: 1234,
@@ -2093,7 +2093,7 @@ var marioAreas = [
     order: 94,
     title: "7-1",
     ident: "7-1",
-    artistId: "UNDF",
+    artistId: "META",
     animation: false,
     point: {
       x: 1234,
@@ -2115,7 +2115,7 @@ var marioAreas = [
     order: 95,
     title: "7-2",
     ident: "7-2",
-    artistId: "UNDF",
+    artistId: "THAT",
     animation: false,
     point: {
       x: 1234,
@@ -2137,7 +2137,7 @@ var marioAreas = [
     order: 96,
     title: "7-3",
     ident: "7-3",
-    artistId: "UNDF",
+    artistId: "SLEE",
     animation: false,
     point: {
       x: 1234,
@@ -2159,7 +2159,7 @@ var marioAreas = [
     order: 97,
     title: "7-4",
     ident: "7-4",
-    artistId: "UNDF",
+    artistId: "BRAN",
     animation: false,
     point: {
       x: 1234,
@@ -2181,7 +2181,7 @@ var marioAreas = [
     order: 98,
     title: "7-5",
     ident: "7-5",
-    artistId: "UNDF",
+    artistId: "NORM",
     animation: false,
     point: {
       x: 1234,
@@ -2203,7 +2203,7 @@ var marioAreas = [
     order: 99,
     title: "7-6",
     ident: "7-6",
-    artistId: "UNDF",
+    artistId: "HAYW",
     animation: false,
     point: {
       x: 1234,
@@ -2225,7 +2225,7 @@ var marioAreas = [
     order: 100,
     title: "7-7",
     ident: "7-7",
-    artistId: "UNDF",
+    artistId: "DEWN",
     animation: false,
     point: {
       x: 1234,
@@ -2247,7 +2247,7 @@ var marioAreas = [
     order: 101,
     title: "7-8",
     ident: "7-8",
-    artistId: "UNDF",
+    artistId: "CHUB",
     animation: false,
     point: {
       x: 1234,
@@ -2269,7 +2269,7 @@ var marioAreas = [
     order: 102,
     title: "7-9",
     ident: "7-9",
-    artistId: "UNDF",
+    artistId: "MHBA",
     animation: false,
     point: {
       x: 1234,
@@ -2291,7 +2291,7 @@ var marioAreas = [
     order: 103,
     title: "7-Airship",
     ident: "7-a",
-    artistId: "UNDF",
+    artistId: "MARI",
     animation: false,
     point: {
       x: 1234,
@@ -2313,7 +2313,7 @@ var marioAreas = [
     order: 104,
     title: "7-Fortress 1",
     ident: "7-f1",
-    artistId: "UNDF",
+    artistId: "CRAB",
     animation: false,
     point: {
       x: 1234,
@@ -2335,7 +2335,7 @@ var marioAreas = [
     order: 105,
     title: "7-Fortress 2",
     ident: "7-f2",
-    artistId: "UNDF",
+    artistId: "BRAN",
     animation: false,
     point: {
       x: 1234,
@@ -2355,9 +2355,9 @@ var marioAreas = [
   },
   {
     order: 106,
-    title: "7-P 1",
+    title: "7-Piranha Plant 1",
     ident: "7-p1",
-    artistId: "UNDF",
+    artistId: "THEB",
     animation: false,
     point: {
       x: 1234,
@@ -2377,9 +2377,9 @@ var marioAreas = [
   },
   {
     order: 107,
-    title: "7-P 2",
+    title: "7-Piranha Plant 2",
     ident: "7-p2",
-    artistId: "UNDF",
+    artistId: "PINS",
     animation: false,
     point: {
       x: 1234,
@@ -2401,7 +2401,7 @@ var marioAreas = [
     order: 108,
     title: "7-Throne",
     ident: "7-t",
-    artistId: "UNDF",
+    artistId: "LYZE",
     animation: false,
     point: {
       x: 1234,
@@ -2423,7 +2423,7 @@ var marioAreas = [
     order: 109,
     title: "World 8",
     ident: "8-world",
-    artistId: "UNDF",
+    artistId: "PIKE",
     animation: false,
     point: {
       x: 1234,
@@ -2445,7 +2445,7 @@ var marioAreas = [
     order: 110,
     title: "8-1",
     ident: "8-1",
-    artistId: "UNDF",
+    artistId: "TDW0",
     animation: false,
     point: {
       x: 1234,
@@ -2467,7 +2467,7 @@ var marioAreas = [
     order: 111,
     title: "8-2",
     ident: "8-2",
-    artistId: "UNDF",
+    artistId: "MORI",
     animation: false,
     point: {
       x: 1234,
@@ -2489,7 +2489,7 @@ var marioAreas = [
     order: 112,
     title: "8-Battleship 1",
     ident: "8-b1",
-    artistId: "UNDF",
+    artistId: "CRIM",
     animation: false,
     point: {
       x: 1234,
@@ -2511,7 +2511,7 @@ var marioAreas = [
     order: 113,
     title: "8-Battleship 2",
     ident: "8-b2",
-    artistId: "UNDF",
+    artistId: "ARTI",
     animation: false,
     point: {
       x: 1234,
@@ -2533,7 +2533,7 @@ var marioAreas = [
     order: 114,
     title: "8-Fortress 1",
     ident: "8-f1",
-    artistId: "UNDF",
+    artistId: "CHJA",
     animation: false,
     point: {
       x: 1234,
@@ -2555,7 +2555,7 @@ var marioAreas = [
     order: 115,
     title: "8-Fortress 2",
     ident: "8-f2",
-    artistId: "UNDF",
+    artistId: "TYLT",
     animation: false,
     point: {
       x: 1234,
@@ -2577,7 +2577,7 @@ var marioAreas = [
     order: 116,
     title: "8-Hammer Bros. 1",
     ident: "8-h1",
-    artistId: "UNDF",
+    artistId: "CHJA",
     animation: false,
     point: {
       x: 1234,
@@ -2599,7 +2599,7 @@ var marioAreas = [
     order: 117,
     title: "8-Hammer Bros. 2",
     ident: "8-h2",
-    artistId: "UNDF",
+    artistId: "AC2D",
     animation: false,
     point: {
       x: 1234,
@@ -2621,7 +2621,7 @@ var marioAreas = [
     order: 118,
     title: "8-Hammer Bros. 3",
     ident: "8-h3",
-    artistId: "UNDF",
+    artistId: "CRAB",
     animation: false,
     point: {
       x: 1234,
@@ -2641,9 +2641,9 @@ var marioAreas = [
   },
   {
     order: 119,
-    title: "8-Throne 1",
+    title: "8-Tank 1",
     ident: "8-b2",
-    artistId: "UNDF",
+    artistId: "DANI",
     animation: false,
     point: {
       x: 1234,
@@ -2663,9 +2663,9 @@ var marioAreas = [
   },
   {
     order: 120,
-    title: "8-Throne 2",
+    title: "8-Tank 2",
     ident: "8-b2",
-    artistId: "UNDF",
+    artistId: "SPAC",
     animation: false,
     point: {
       x: 1234,
@@ -2687,7 +2687,7 @@ var marioAreas = [
     order: 123,
     title: "World 9 (Warp Zone)",
     ident: "b-warpzone",
-    artistId: "UNDF",
+    artistId: "DAIZ",
     animation: false,
     point: {
       x: 1234,
@@ -2709,7 +2709,7 @@ var marioAreas = [
     order: 123,
     title: "Battle Mode",
     ident: "b-battlemode",
-    artistId: "UNDF",
+    artistId: "REES",
     animation: false,
     point: {
       x: 1234,
@@ -2731,7 +2731,7 @@ var marioAreas = [
     order: 124,
     title: "Boss: Boom Boom",
     ident: "8-boomboom",
-    artistId: "UNDF",
+    artistId: "GHOU",
     animation: false,
     point: {
       x: 1234,
@@ -2753,7 +2753,7 @@ var marioAreas = [
     order: 125,
     title: "Boss: Larry",
     ident: "1-larry",
-    artistId: "UNDF",
+    artistId: "HANS",
     animation: false,
     point: {
       x: 1234,
@@ -2775,7 +2775,7 @@ var marioAreas = [
     order: 126,
     title: "Boss: Morton",
     ident: "2-morton",
-    artistId: "UNDF",
+    artistId: "AC2D",
     animation: false,
     point: {
       x: 1234,
@@ -2797,7 +2797,7 @@ var marioAreas = [
     order: 127,
     title: "Boss: Wendy",
     ident: "3-wendy",
-    artistId: "UNDF",
+    artistId: "BATF",
     animation: false,
     point: {
       x: 1234,
@@ -2819,7 +2819,7 @@ var marioAreas = [
     order: 128,
     title: "Boss: Iggy",
     ident: "4-iggy",
-    artistId: "UNDF",
+    artistId: "NORM",
     animation: false,
     point: {
       x: 1234,
@@ -2841,7 +2841,7 @@ var marioAreas = [
     order: 129,
     title: "Boss: Roy",
     ident: "5-roy",
-    artistId: "UNDF",
+    artistId: "OTA0",
     animation: false,
     point: {
       x: 1234,
@@ -2863,7 +2863,7 @@ var marioAreas = [
     order: 130,
     title: "Boss: Lemmy",
     ident: "6-lemmy",
-    artistId: "UNDF",
+    artistId: "ROGE",
     animation: false,
     point: {
       x: 1234,
@@ -2885,7 +2885,7 @@ var marioAreas = [
     order: 131,
     title: "Boss: Ludwig",
     ident: "7-ludwig",
-    artistId: "UNDF",
+    artistId: "DAMI",
     animation: false,
     point: {
       x: 1234,
@@ -2907,7 +2907,7 @@ var marioAreas = [
     order: 132,
     title: "Boss: Bowser",
     ident: "8-bowser",
-    artistId: "UNDF",
+    artistId: "ANIM",
     animation: false,
     point: {
       x: 1234,
@@ -2929,7 +2929,7 @@ var marioAreas = [
     order: 133,
     title: "Mini Game",
     ident: "b-minigame",
-    artistId: "UNDF",
+    artistId: "REES",
     animation: false,
     point: {
       x: 1234,
@@ -2951,7 +2951,7 @@ var marioAreas = [
     order: 134,
     title: "Toad\u2019s House",
     ident: "b-toad",
-    artistId: "UNDF",
+    artistId: "BLIN",
     animation: false,
     point: {
       x: 1234,
@@ -2973,7 +2973,7 @@ var marioAreas = [
     order: 135,
     title: "Treasure Ship",
     ident: "b-treasureship",
-    artistId: "UNDF",
+    artistId: "IMIO",
     animation: false,
     point: {
       x: 1234,
@@ -2995,7 +2995,7 @@ var marioAreas = [
     order: 135,
     title: "Ending",
     ident: "8b-end",
-    artistId: "UNDF",
+    artistId: "STEV",
     animation: false,
     point: {
       x: 1234,

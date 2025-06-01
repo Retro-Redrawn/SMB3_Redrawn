@@ -173,7 +173,7 @@ var marioAreas = [
     type: "terrace",
     zoom: 2,
     teleporters: [],
-    post_url: ""
+    post_url: "https://x.com/yammy16160/status/1685882899730477057"
   },
   {
     order: 9,
@@ -591,7 +591,7 @@ var marioAreas = [
     type: "terrace",
     zoom: 2,
     teleporters: [],
-    post_url: ""
+    post_url: "https://x.com/MetaruPX/status/1692642774544195763"
   },
   {
     order: 28,
@@ -723,7 +723,7 @@ var marioAreas = [
     type: "terrace",
     zoom: 2,
     teleporters: [],
-    post_url: ""
+    post_url: "https://x.com/barosaros/status/1698834302166057087"
   },
   {
     order: 34,
@@ -1625,7 +1625,7 @@ var marioAreas = [
     type: "terrace",
     zoom: 2,
     teleporters: [],
-    post_url: ""
+    post_url: "https://x.com/blam_thethird/status/1684440890851442688"
   },
   {
     order: 74,
@@ -1801,7 +1801,7 @@ var marioAreas = [
     type: "terrace",
     zoom: 2,
     teleporters: [],
-    post_url: ""
+    post_url: "https://x.com/danvelasquezart/status/1684693365818834944"
   },
   {
     order: 81,
@@ -1933,7 +1933,7 @@ var marioAreas = [
     type: "terrace",
     zoom: 2,
     teleporters: [],
-    post_url: ""
+    post_url: "https://x.com/ChJaPx/status/1596998983469367297"
   },
   {
     order: 87,
@@ -2967,7 +2967,7 @@ var marioAreas = [
     type: "terrace",
     zoom: 2,
     teleporters: [],
-    post_url: ""
+    post_url: "https://x.com/blindeduif/status/1686059153054380032"
   },
   {
     order: 135,

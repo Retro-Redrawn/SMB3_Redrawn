@@ -2461,7 +2461,7 @@ var marioAreas = [
     type: "terrace",
     zoom: 2,
     teleporters: [],
-    post_url: ""
+    post_url: "https://x.com/Lord_SForcer/status/1627449833349910528"
   },
   {
     order: 111,

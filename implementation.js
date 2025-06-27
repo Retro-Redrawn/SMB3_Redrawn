@@ -27,7 +27,7 @@ var activeLayerIndex = 0;           // Currently active layer index (and initial
 var redrawnLayers = [
     {
         name: "game", // name of folder containing screens for a layer
-        canvasSize: {width: 2655, height: 3400},
+        canvasSize: {width: 3960, height: 4900},
         areas: marioAreas
     }
 ];

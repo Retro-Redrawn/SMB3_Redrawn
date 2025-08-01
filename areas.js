@@ -38,7 +38,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "grass",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -60,7 +60,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "grass",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -82,7 +82,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "grass",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -104,7 +104,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "grass",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -126,7 +126,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "grass",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -148,7 +148,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "grass",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -170,7 +170,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "grass",
     zoom: 2,
     teleporters: [],
     post_url: "https://x.com/yammy16160/status/1685882899730477057"
@@ -192,7 +192,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "grass",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -214,7 +214,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "grass",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -236,7 +236,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "grass",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -258,7 +258,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "grass",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -280,7 +280,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "grass",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -324,7 +324,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "desert",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -346,7 +346,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "desert",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -368,7 +368,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "desert",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -390,7 +390,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "desert",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -412,7 +412,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "desert",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -434,7 +434,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "desert",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -456,7 +456,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "desert",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -478,7 +478,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "desert",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -500,7 +500,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "desert",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -522,7 +522,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "desert",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -544,7 +544,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "desert",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -566,7 +566,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "desert",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -588,7 +588,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "desert",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -611,7 +611,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "desert",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -633,7 +633,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "world",
     zoom: 2,
     teleporters: [],
     post_url: "https://x.com/MetaruPX/status/1692642774544195763"
@@ -655,7 +655,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -677,7 +677,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -699,7 +699,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -721,7 +721,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -743,7 +743,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -765,7 +765,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: "https://x.com/barosaros/status/1698834302166057087"
@@ -787,7 +787,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -809,7 +809,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -831,7 +831,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -853,7 +853,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -875,7 +875,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -897,7 +897,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -919,7 +919,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -941,7 +941,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -963,7 +963,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -985,7 +985,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1007,7 +1007,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "water",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1029,7 +1029,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "world",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1051,7 +1051,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "giant",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1073,7 +1073,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "giant",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1095,7 +1095,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "giant",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1117,7 +1117,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "giant",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1139,7 +1139,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "giant",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1161,7 +1161,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "giant",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1183,7 +1183,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "giant",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1205,7 +1205,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "giant",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1227,7 +1227,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "giant",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1249,7 +1249,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "giant",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1271,7 +1271,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "giant",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1293,7 +1293,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "giant",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1315,7 +1315,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "giant",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1338,7 +1338,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "giant",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1360,7 +1360,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "world",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1382,7 +1382,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1404,7 +1404,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1426,7 +1426,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1448,7 +1448,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1470,7 +1470,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1492,7 +1492,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1514,7 +1514,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1536,7 +1536,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1558,7 +1558,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1580,7 +1580,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1602,7 +1602,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1624,7 +1624,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1646,7 +1646,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1668,7 +1668,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1690,7 +1690,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1712,7 +1712,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: "https://x.com/blam_thethird/status/1684440890851442688"
@@ -1734,7 +1734,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1756,7 +1756,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "sky",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1778,7 +1778,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "world",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1800,7 +1800,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1822,7 +1822,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1844,7 +1844,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1866,7 +1866,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1888,7 +1888,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1910,7 +1910,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: "https://x.com/danvelasquezart/status/1684693365818834944"
@@ -1932,7 +1932,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1954,7 +1954,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1976,7 +1976,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -1998,7 +1998,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2020,7 +2020,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2042,7 +2042,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: "https://x.com/ChJaPx/status/1596998983469367297"
@@ -2064,7 +2064,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2086,7 +2086,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2108,7 +2108,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2130,7 +2130,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2152,7 +2152,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2174,7 +2174,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2196,7 +2196,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "ice",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2218,7 +2218,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "world",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2240,7 +2240,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "pipe",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2262,7 +2262,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "pipe",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2284,7 +2284,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "pipe",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2306,7 +2306,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "pipe",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2328,7 +2328,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "pipe",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2350,7 +2350,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "pipe",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2372,7 +2372,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "pipe",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2394,7 +2394,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "pipe",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2416,7 +2416,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "pipe",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2438,7 +2438,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "pipe",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2460,7 +2460,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "pipe",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2482,7 +2482,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "pipe",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2504,7 +2504,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "pipe",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2526,7 +2526,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "pipe",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2548,7 +2548,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "pipe",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2570,7 +2570,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "pipe",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2592,7 +2592,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "world",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2614,7 +2614,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "dark",
     zoom: 2,
     teleporters: [],
     post_url: "https://x.com/Lord_SForcer/status/1627449833349910528"
@@ -2636,7 +2636,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "dark",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2658,7 +2658,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "dark",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2680,7 +2680,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "dark",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2702,7 +2702,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "dark",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2724,7 +2724,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "dark",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2746,7 +2746,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "dark",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2768,7 +2768,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "dark",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2790,7 +2790,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "dark",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2812,7 +2812,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "dark",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2834,7 +2834,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "dark",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2856,7 +2856,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "dark",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2878,7 +2878,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "world",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2900,7 +2900,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "bonus",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2922,7 +2922,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "bonus",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2944,7 +2944,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "bonus",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -2966,7 +2966,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "bonus",
     zoom: 2,
     teleporters: [],
     post_url: "https://x.com/blindeduif/status/1686059153054380032"
@@ -2988,7 +2988,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "bonus",
     zoom: 2,
     teleporters: [],
     post_url: ""
@@ -3010,7 +3010,7 @@ var marioAreas = [
       height: null
     },
     pan: "horizontal",
-    type: "terrace",
+    type: "bonus",
     zoom: 2,
     teleporters: [],
     post_url: ""

@@ -39,76 +39,69 @@ var redrawnLayers = [
 */
 var biomes = [
     {
-        name: "Terrace",
-        ident: "terrace",
+        name: "World",
+        ident: "world",
+        iconId: "language",
+        color: 'rgb(15 15 15)',
+    },
+    {
+        name: "Grass",
+        ident: "grass",
         iconId: "grass",
         color: 'rgb(20 80 160)',
     },
-    {
-        name: "Underground",
-        ident: "underground",
-        iconId: "fireplace",
-        color: 'rgb(113 104 127)',
-    },
-    {
-        name: "Castle",
-        ident: "castle",
-        iconId: "fort",
-        color: 'rgb(114 79 52)',
-    },
-    {
-        name: "Town",
-        ident: "town",
-        iconId: "house",
-        color: 'rgb(150 90 45)',
-    },
-    {
-        name: "Dungeon",
-        ident: "dungeon",
-        iconId: "music_note",
-        color: 'rgb(180 60 90)',
-    },
-
-    {
-        name: "Boss",
-        ident: "boss",
-        iconId: "dark_mode",
-        color: 'rgb(110 25 40)',
-    },
-    {
-        name: "Other",
-        ident: "other",
-        iconId: "dataset",
-        color: 'rgb(94 94 94)',
-    },
-    {
-        name: "Mountain",
-        ident: "mountain",
-        iconId: "landscape",
-        color: 'rgb(120 94 94)',
-    },
-    {
-        name: "Forest",
-        ident: "forest",
-        iconId: "forest",
-        color: 'rgb(30 120 80)',
-    },
-    {
+	{
         name: "Desert",
         ident: "desert",
-        iconId: "sunny",
-        color: 'rgb(240 170 30)',
+        iconId: "landscape",
+        color: 'rgb(20 80 160)',
     },
-    {
-        name: "Beach",
-        ident: "beach",
-        iconId: "beach_access",
-        color: 'rgb(255 200 60)',
+	{
+        name: "Water",
+        ident: "water",
+        iconId: "water",
+        color: 'rgb(20 80 160)',
     },
-    {
-        name: "Surfing",
-        ident: "surfing",
-        iconId: "surfing",
+	{
+        name: "Giant",
+        ident: "giant",
+        iconId: "arrow_upward",
+        color: 'rgb(20 80 160)',
+    },
+	{
+        name: "Sky",
+        ident: "sky",
+        iconId: "cloud",
+        color: 'rgb(20 80 160)',
+    },
+	{
+        name: "Ice",
+        ident: "ice",
+        iconId: "ac_unit",
+        color: 'rgb(20 80 160)',
+    },
+	{
+		name: "Pipe",
+        ident: "pipe",
+        iconId: "plumbing",
+        color: 'rgb(20 80 160)',
+    },
+	{
+		name: "Dark",
+        ident: "dark",
+        iconId: "dark_mode",
+        color: 'rgb(20 80 160)',
+    },
+	{
+		name: "Bonus",
+        ident: "bonus",
+        iconId: "star",
+        color: 'rgb(20 80 160)',
+    },
+	{
+		name: "Boss",
+        ident: "boss",
+        iconId: "brightness_alert",
         color: 'rgb(20 80 160)',
     },
 ];

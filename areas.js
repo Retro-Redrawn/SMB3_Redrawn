@@ -173,7 +173,7 @@ var marioAreas = [
     type: "grass",
     zoom: 2,
     teleporters: [],
-    post_url: "https://x.com/yammy16160/status/1685882899730477057"
+    post_url: ""
   },
   {
     order: 9,
@@ -636,7 +636,7 @@ var marioAreas = [
     type: "world",
     zoom: 2,
     teleporters: [],
-    post_url: "https://x.com/MetaruPX/status/1692642774544195763"
+    post_url: ""
   },
   {
     order: 28,
@@ -768,7 +768,7 @@ var marioAreas = [
     type: "water",
     zoom: 2,
     teleporters: [],
-    post_url: "https://x.com/barosaros/status/1698834302166057087"
+    post_url: ""
   },
   {
     order: 34,
@@ -1715,7 +1715,7 @@ var marioAreas = [
     type: "sky",
     zoom: 2,
     teleporters: [],
-    post_url: "https://x.com/blam_thethird/status/1684440890851442688"
+    post_url: ""
   },
   {
     order: 74,
@@ -1913,7 +1913,7 @@ var marioAreas = [
     type: "ice",
     zoom: 2,
     teleporters: [],
-    post_url: "https://x.com/danvelasquezart/status/1684693365818834944"
+    post_url: ""
   },
   {
     order: 81,
@@ -2045,7 +2045,7 @@ var marioAreas = [
     type: "ice",
     zoom: 2,
     teleporters: [],
-    post_url: "https://x.com/ChJaPx/status/1596998983469367297"
+    post_url: ""
   },
   {
     order: 87,
@@ -2617,7 +2617,7 @@ var marioAreas = [
     type: "dark",
     zoom: 2,
     teleporters: [],
-    post_url: "https://x.com/Lord_SForcer/status/1627449833349910528"
+    post_url: ""
   },
   {
     order: 111,
@@ -2969,7 +2969,7 @@ var marioAreas = [
     type: "bonus",
     zoom: 2,
     teleporters: [],
-    post_url: "https://x.com/blindeduif/status/1686059153054380032"
+    post_url: ""
   },
   {
     order: 135,

@@ -65,7 +65,7 @@ var biomes = [
 	{
         name: "Giant",
         ident: "giant",
-        iconId: "arrow_upward",
+        iconId: "accessibility_new",
         color: 'rgb(20 80 160)',
     },
 	{
@@ -96,12 +96,6 @@ var biomes = [
 		name: "Bonus",
         ident: "bonus",
         iconId: "star",
-        color: 'rgb(20 80 160)',
-    },
-	{
-		name: "Boss",
-        ident: "boss",
-        iconId: "brightness_alert",
         color: 'rgb(20 80 160)',
     },
 ];

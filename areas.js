@@ -2953,7 +2953,7 @@ var marioAreas = [
     order: 134,
     title: "Toad\u2019s House",
     ident: "b-toad",
-    artistId: "BLIN",
+    artistId: "BLIN_2",
     animation: false,
     point: {
       x: 3600,

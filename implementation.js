@@ -11,19 +11,46 @@
 */
 
 // Directories
-const CANVAS_BACKGROUND_IMAGE = 'img/website/grid_mario.png'; // Tiled background image for the canvas (blank if none)
-const WINDOW_BACKGROUND_COLOR = 0x000000;    // Color for the window background
-const WINDOW_BACKGROUND_IMAGE = ''; // Tiled background image for the window (blank if none)
+/**
+ * File path to tiled background image for the canvas (use empty string if none)
+ * @type {string}
+ */
+const CANVAS_BACKGROUND_IMAGE = 'img/website/grid_mario.png';
+/**
+ * Hex Color for the window background.
+ * @type {int}
+ */
+const WINDOW_BACKGROUND_COLOR = 0x000000;
+/**
+ * File path to tiled background image for the window (blank if none)
+ * @type {string}
+ */
+const WINDOW_BACKGROUND_IMAGE = '';
 
 // File Naming
-const NEW_SLICE_SUFFIX = '' // Optional suffix added to new map file names (e.g. '_new' for 'map_name_new.png')
-const OLD_SLICE_SUFFIX = '' // Optional suffix added to old map file names (e.g. '_old' for 'map_name_old.png')
+/** 
+ * Optional suffix added to new map file names (e.g. '_new' for 'map_name_new.png') 
+ * @type {string}
+ */
+const NEW_SLICE_SUFFIX = '';
 
-// Audio
-var bgmTrack = 'audio/overworld.mp3';
+/** 
+ * Optional suffix added to old map file names (e.g. '_old' for 'map_name_old.png')
+ * @type {string}
+ */
+const OLD_SLICE_SUFFIX = '';
 
-/** Content layers in the Redrawn */
-var activeLayerIndex = 0;           // Currently active layer index (and initial index)
+// Layers
+/**
+ * Currently active layer index (and initial index) 
+ * @type {int}
+ */
+var activeLayerIndex = 0;
+
+/** 
+ * Content layers in the Redrawn 
+ * @type {Array<{name: string, canvasSize:{width: int, height: int}, areas: string}>}
+ */
 var redrawnLayers = [
     {
         name: "game", // name of folder containing screens for a layer
@@ -98,4 +125,13 @@ var biomes = [
         iconId: "star",
         color: 'rgb(20 80 160)',
     },
+];
+
+/** 
+ * Directory of image files tied to defined iconIds. 
+ * If not defined here, the icon is looked up in the Material Icon library. 
+ * Ideal dimensions are 24x24px; image will automatically be resized.
+ * @type {Array<{iconId: string, path: string}>}
+ */
+var iconFiles = [
 ];

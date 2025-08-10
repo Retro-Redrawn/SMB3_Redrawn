@@ -59,11 +59,11 @@ var redrawnLayers = [
     }
 ];
 
-/** Biome Data (Screen icons) 
- * (to be updated per the organizer's tastes)
- * 
- * see icon list here >> https://fonts.google.com/icons
-*/
+// Biomes
+/** 
+ * Biome Data (Screen icons). 
+ * @type {Array<{name: string, ident: string, iconId: string, color: string}>}
+ */
 var biomes = [
     {
         name: "World",
@@ -129,7 +129,8 @@ var biomes = [
 
 /** 
  * Directory of image files tied to defined iconIds. 
- * If not defined here, the icon is looked up in the Material Icon library. 
+ * If not defined here, the icon is looked up in the Material Icon library.  
+ * See icon list here >> https://fonts.google.com/icons
  * Ideal dimensions are 24x24px; image will automatically be resized.
  * @type {Array<{iconId: string, path: string}>}
  */

@@ -68,8 +68,8 @@ var biomes = [
     {
         name: "World",
         ident: "world",
-        iconId: "language",
-        color: 'rgb(15 15 15)',
+        iconId: "worldmap",
+        color: 'rgb(20 20 20)',
     },
     {
         name: "Grass",
@@ -80,7 +80,7 @@ var biomes = [
 	{
         name: "Desert",
         ident: "desert",
-        iconId: "landscape",
+        iconId: "desert",
         color: 'rgb(20 80 160)',
     },
 	{
@@ -92,37 +92,37 @@ var biomes = [
 	{
         name: "Giant",
         ident: "giant",
-        iconId: "accessibility_new",
+        iconId: "giant",
         color: 'rgb(20 80 160)',
     },
 	{
         name: "Sky",
         ident: "sky",
-        iconId: "cloud",
+        iconId: "sky",
         color: 'rgb(20 80 160)',
     },
 	{
         name: "Ice",
         ident: "ice",
-        iconId: "ac_unit",
+        iconId: "ice",
         color: 'rgb(20 80 160)',
     },
 	{
 		name: "Pipe",
         ident: "pipe",
-        iconId: "plumbing",
+        iconId: "pipe",
         color: 'rgb(20 80 160)',
     },
 	{
 		name: "Dark",
         ident: "dark",
-        iconId: "dark_mode",
+        iconId: "dark",
         color: 'rgb(20 80 160)',
     },
 	{
 		name: "Bonus",
         ident: "bonus",
-        iconId: "star",
+        iconId: "bonus",
         color: 'rgb(20 80 160)',
     },
 ];
@@ -135,4 +135,44 @@ var biomes = [
  * @type {Array<{iconId: string, path: string}>}
  */
 var iconFiles = [
+    {
+        iconId: "worldmap",
+        path: "img/website/icon_worldmap.svg"
+    },
+	{
+        iconId: "grass",
+        path: "img/website/icon_world1.svg"
+    },
+	{
+        iconId: "desert",
+        path: "img/website/icon_world2.svg"
+    },
+	{
+        iconId: "water",
+        path: "img/website/icon_world3.svg"
+    },
+	{
+        iconId: "giant",
+        path: "img/website/icon_world4.svg"
+    },
+	{
+        iconId: "sky",
+        path: "img/website/icon_world5.svg"
+    },
+	{
+        iconId: "ice",
+        path: "img/website/icon_world6.svg"
+    },
+	{
+        iconId: "pipe",
+        path: "img/website/icon_world7.svg"
+    },
+	{
+        iconId: "dark",
+        path: "img/website/icon_world8.svg"
+    },
+	{
+        iconId: "bonus",
+        path: "img/website/icon_bonus.svg"
+    },
 ];

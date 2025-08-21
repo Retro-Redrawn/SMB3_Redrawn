@@ -15,7 +15,7 @@
  * File path to tiled background image for the canvas (use empty string if none)
  * @type {string}
  */
-const CANVAS_BACKGROUND_IMAGE = 'img/website/grid_mario.png';
+const CANVAS_BACKGROUND_IMAGE = '';
 /**
  * Hex Color for the window background.
  * @type {int}
@@ -25,7 +25,7 @@ const WINDOW_BACKGROUND_COLOR = 0x000000;
  * File path to tiled background image for the window (blank if none)
  * @type {string}
  */
-const WINDOW_BACKGROUND_IMAGE = '';
+const WINDOW_BACKGROUND_IMAGE = 'img/website/grid_mario.png';
 
 // File Naming
 /** 

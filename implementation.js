@@ -68,7 +68,7 @@ var biomes = [
     {
         name: "World",
         ident: "world",
-        iconId: "world",
+        iconId: "worldmap",
         color: 'rgb(20 20 20)',
     },
     {
@@ -136,43 +136,43 @@ var biomes = [
  */
 var iconFiles = [
     {
-        iconId: "world",
-        path: "img/website/icon_world.png"
+        iconId: "worldmap",
+        path: "img/website/icon_worldmap.svg"
     },
 	{
         iconId: "grass",
-        path: "img/website/icon_world1.png"
+        path: "img/website/icon_world1.svg"
     },
 	{
         iconId: "desert",
-        path: "img/website/icon_world2.png"
+        path: "img/website/icon_world2.svg"
     },
 	{
         iconId: "water",
-        path: "img/website/icon_world3.png"
+        path: "img/website/icon_world3.svg"
     },
 	{
         iconId: "giant",
-        path: "img/website/icon_world4.png"
+        path: "img/website/icon_world4.svg"
     },
 	{
         iconId: "sky",
-        path: "img/website/icon_world5.png"
+        path: "img/website/icon_world5.svg"
     },
 	{
         iconId: "ice",
-        path: "img/website/icon_world6.png"
+        path: "img/website/icon_world6.svg"
     },
 	{
         iconId: "pipe",
-        path: "img/website/icon_world7.png"
+        path: "img/website/icon_world7.svg"
     },
 	{
         iconId: "dark",
-        path: "img/website/icon_world8.png"
+        path: "img/website/icon_world8.svg"
     },
 	{
         iconId: "bonus",
-        path: "img/website/icon_bonus.png"
+        path: "img/website/icon_bonus.svg"
     },
 ];

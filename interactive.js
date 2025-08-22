@@ -45,7 +45,7 @@ var autoHighlightEnabled = true;
 var highlightedArea = null;
 
 // Filters
-var blurFilter = null;      // Motion blue used when zooming
+var blurFilter = null;      // Motion blur used when zooming
 var bulgeFilter = null;
 var colorFilter = null;      // Used for fade-to-black sequences (e.g. in tour mode)
 
@@ -548,7 +548,10 @@ function getAreaImage(area, styleOverride = "") {
 
 /** Actions peformed on update (each frame). */
 function tick () {
-    viewport.filters = []
+
+    let motion_blur_target = MOTIONBLUR_VIEWPORT ? viewport : map;
+    motion_blur_target.filters = []
+
     if (cameraAnimation.progress >= 1) {
         cameraAnimation.playing = false
         cameraAdjustment.progress = 1;
@@ -556,7 +559,7 @@ function tick () {
     if (!cameraAnimation.playing) {
         if (zoomLevel !== currentZoom) {
             if (!blurIsDisabled()) {
-                viewport.filters = [blurFilter]
+                motion_blur_target.filters = [blurFilter]
             }
             currentZoom = lerp(currentZoom, zoomLevel, 0.2)
             if (Math.abs(zoomLevel - currentZoom) < 0.005) { // Floating point rounding
@@ -593,7 +596,7 @@ function tick () {
             instantZoom(pinchForTick.factor, pinchForTick.x, pinchForTick.y)
             if (map.scale.x < zoomMax && map.scale.x > zoomMin) {
                 if (!blurIsDisabled()) {
-                    viewport.filters = [blurFilter]
+                    motion_blur_target.filters = [blurFilter]
                 }
                 blurFilter.strength = .1
                 blurFilter.center = [ pinchForTick.x, pinchForTick.y ]

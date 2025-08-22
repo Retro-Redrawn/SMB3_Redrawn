@@ -27,6 +27,12 @@ const WINDOW_BACKGROUND_COLOR = 0x000000;
  */
 const WINDOW_BACKGROUND_IMAGE = 'img/website/grid_mario.png';
 
+/**
+ * Whether to apply motion blur to the full viewport or just the map canvas.
+ * @type {boolean}
+ */
+const MOTIONBLUR_VIEWPORT = false;
+
 // File Naming
 /** 
  * Optional suffix added to new map file names (e.g. '_new' for 'map_name_new.png') 

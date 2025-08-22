@@ -34,6 +34,7 @@ var activeAreas = redrawnLayers[activeLayerIndex].areas;  // Active array of are
 var layerCount = redrawnLayers.length;  // Total number of layers
 var canvasDimensions = redrawnLayers[activeLayerIndex].canvasSize; // Dimension of active canvas
 var map = null;
+var mapbg;  // Background for the map.
 var mapImages = null;
 var mapZones = null;
 var currentMapStyle = NEW_STYLE_NAME;
@@ -237,7 +238,7 @@ function setupCanvas () {
     map.name = "Map";
 
     if (CANVAS_BACKGROUND_IMAGE !== '') {
-        var mapbg = new PIXI.TilingSprite(new PIXI.Texture.from(CANVAS_BACKGROUND_IMAGE), canvasDimensions.width, canvasDimensions.height)
+        mapbg = new PIXI.TilingSprite(new PIXI.Texture.from(CANVAS_BACKGROUND_IMAGE), canvasDimensions.width, canvasDimensions.height)
         mapbg.name = "Map Background"
         mapbg.zIndex = -1
         map.addChild(mapbg)
@@ -1199,7 +1200,14 @@ function getActiveArea () {
 
 /** Callback occurring when the window is resized. */
 function onResize () {
-    if(app && app.renderer) app.renderer.resize(window.innerWidth, window.innerHeight);
+    if (app && app.renderer) 
+    {
+        app.renderer.resize(window.innerWidth, window.innerHeight);
+
+        // Update map backgroud scope
+        mapbg.width = canvasDimensions.width;
+        mapbg.height = canvasDimensions.height;
+    }
 }
 
 function changeCameraSpeed (e) {

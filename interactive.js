@@ -34,7 +34,8 @@ var activeAreas = redrawnLayers[activeLayerIndex].areas;  // Active array of are
 var layerCount = redrawnLayers.length;  // Total number of layers
 var canvasDimensions = redrawnLayers[activeLayerIndex].canvasSize; // Dimension of active canvas
 var map = null;
-var mapbg;  // Background for the map.
+var mapbg;  // Background for the map
+var background; // Background behind the canvas
 var mapImages = null;
 var mapZones = null;
 var currentMapStyle = NEW_STYLE_NAME;
@@ -254,7 +255,7 @@ function setupCanvas () {
     
     buildMap()
 
-    var background = new PIXI.Graphics()
+    background = new PIXI.Graphics()
     background.name = "Background Fill"
     background.beginFill(WINDOW_BACKGROUND_COLOR)
     background.drawRect(0,0,window.innerWidth, window.innerHeight)
@@ -1205,8 +1206,11 @@ function onResize () {
         app.renderer.resize(window.innerWidth, window.innerHeight);
 
         // Update map backgroud scope
-        mapbg.width = canvasDimensions.width;
-        mapbg.height = canvasDimensions.height;
+        if (background != undefined) 
+        {
+            background.width = window.innerWidth;
+            background.height = window.innerHeight;
+        }
     }
 }
 

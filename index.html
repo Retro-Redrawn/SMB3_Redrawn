@@ -25,6 +25,7 @@
     <!--Retro Redrawn: CSS-->
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="player.css">
+    <link rel="stylesheet" href="options.css">
 </head>
 <body class="content">
     <div id="app">
@@ -64,24 +65,39 @@
                         <hr>
                         <ul id="areas"></ul>
                     </div>
-                    <div id="settings">
-                        <hr>
-                        <div>
-                            <input class="settings__checkbox" type="checkbox" id="disableBlur"><label for="disableBlur">Disable Zoom Blur</label> <br><br>
-                            <input class="settings__checkbox" type="checkbox" id="areaBorderToggle" oninput="onAreaBorderToggled(this.checked)"><label for="areaBorderToggle">Hide Area Border</label> 
-                        </div><br>
-                        <hr>
-                        <div>
-                            <label>Camera Speed</label><br>
-                            <input type="range" min="0.5" max="2" value="1" step="0.25" id="cameraSpeed" oninput="changeCameraSpeed(this.value)">
-                            <small>1x</small>
+                    <div id="settings" class="options-container">
+                        <div class="options-section">
+                            <h3>Display Settings</h3>
+                            <div class="option-row">
+                                <label class="option-label" for="disableBlur">Disable Zoom Blur</label>
+                                <div class="option-control">
+                                    <input class="option-checkbox" type="checkbox" id="disableBlur">
+                                </div>
+                            </div>
+                            <div class="option-row">
+                                <label class="option-label" for="areaBorderToggle">Hide Area Border</label>
+                                <div class="option-control">
+                                    <input class="option-checkbox" type="checkbox" id="areaBorderToggle" oninput="onAreaBorderToggled(this.checked)">
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <label>Tour Speed</label><br>
-                            <input type="range" min="0.5" max="2" value="1" step="0.25" id="tourCameraSpeed" oninput="changeTourCameraSpeed(this.value)">
-                            <small>1x</small>
+                        <div class="options-section">
+                            <h3>Camera Controls</h3>
+                            <div class="option-row">
+                                <label class="option-label" for="cameraSpeed">Camera Speed</label>
+                                <div class="option-control">
+                                    <input type="range" min="0.5" max="2" value="1" step="0.25" id="cameraSpeed" oninput="changeCameraSpeed(this.value)">
+                                    <small>1x</small>
+                                </div>
+                            </div>
+                            <div class="option-row">
+                                <label class="option-label" for="tourCameraSpeed">Tour Speed</label>
+                                <div class="option-control">
+                                    <input type="range" min="0.5" max="2" value="1" step="0.25" id="tourCameraSpeed" oninput="changeTourCameraSpeed(this.value)">
+                                    <small>1x</small>
+                                </div>
+                            </div>
                         </div>
-                        <hr>
                     </div>
                     <div id="about">
                         <p>Super Mario 3 Redrawn is a collaborative art project by a group of passionate pixel artists from across the world.</p>

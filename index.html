@@ -24,6 +24,7 @@
     
     <!--Retro Redrawn: CSS-->
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="player.css">
 </head>
 <body class="content">
     <div id="app">
@@ -105,10 +106,27 @@
                 </div>
                 <br>
                 <div class="bgm">
-                    <audio id="bgmPlayer" controls autoplay loop>
-                        <source src="audio/athletic_medley.mp3" type="audio/mpeg">
-                        Your browser does not support the audio component.
-                    </audio>
+                    <div class="custom-player" data-player-num="0" data-autoplay="true">
+                        <div class="player-controls">
+                            <button class="control-btn" data-control="restart" title="Restart"><span class="material-icons">replay</span></button>
+                            <button class="control-btn" data-control="play-pause" title="Play/Pause"><span class="material-icons">play_arrow</span></button>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <span class="time-display">0:00</span>
+                            </div>
+                        </div>
+                        <div class="track-info-container">
+                            <div class="track-info-scroll">
+                                <div class="track-info">
+                                    <span class="track-title"></span>
+                                    <span class="track-info-separator">by</span>
+                                    <span class="track-artist"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tour">
                     <button id="tourButton" onclick="toggleTour()"><span class="material-icons">play_arrow</span> <span>Begin Tour</span></button>
@@ -160,6 +178,7 @@
 <script src="https://retro-redrawn.github.io/Retro-Redrawn-Data/RedrawnArtistDataUtils.js"></script>
 <script src="implementation.js"></script>
 <script src="interactive.js"></script>
+<script src="audio-player.js"></script>
 <script src="maputils.js"></script>
 <script src="interactive_overrides.js"></script>
 

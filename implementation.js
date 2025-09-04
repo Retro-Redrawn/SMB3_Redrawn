@@ -10,7 +10,26 @@
 *   Created in 2023
 */
 
-// Directories
+//#region Audio
+
+/**
+ * Information about audio tracks used by the audio player. 
+ * Please set 'player-data-num' in the index.html to the track number you want to play for each player.
+ * @type {Array<{title: string, artist: string, audio: string, audio_intro: string}>}
+ */
+const AUDIO_TRACKS = [
+    {
+        title: 'Super Mario Bros 3 Athletic Medley',
+        artist: 'Toribobs',
+        audio: 'audio/athletic_medley.mp3',
+        audio_intro: 'audio/intro_athletic_medley.mp3'
+    }
+];
+
+//#endregion
+
+//#region Background Images
+
 /**
  * File path to tiled background image for the canvas (use empty string if none)
  * @type {string}
@@ -26,14 +45,16 @@ const WINDOW_BACKGROUND_COLOR = 0x000000;
  * @type {string}
  */
 const WINDOW_BACKGROUND_IMAGE = 'img/website/grid_mario.png';
-
 /**
  * Whether to apply motion blur to the full viewport or just the map canvas.
  * @type {boolean}
  */
 const MOTIONBLUR_VIEWPORT = false;
 
-// File Naming
+//#endregion
+
+//#region Art File Naming
+
 /** 
  * Optional suffix added to new map file names (e.g. '_new' for 'map_name_new.png') 
  * @type {string}
@@ -53,11 +74,15 @@ const OLD_SLICE_SUFFIX = '';
  */
 var activeLayerIndex = 0;
 
+//#endregion
+
+//#region Content 
+
 /** 
  * Content layers in the Redrawn 
  * @type {Array<{name: string, canvasSize:{width: int, height: int}, areas: string}>}
  */
-var redrawnLayers = [
+const redrawnLayers = [
     {
         name: "game", // name of folder containing screens for a layer
         canvasSize: {width: 3960, height: 4900},
@@ -65,12 +90,14 @@ var redrawnLayers = [
     }
 ];
 
-// Biomes
+//#endregion
+
+//#region  Biomes
 /** 
  * Biome Data (Screen icons). 
  * @type {Array<{name: string, ident: string, iconId: string, color: string}>}
  */
-var biomes = [
+const biomes = [
     {
         name: "World",
         ident: "world",
@@ -140,7 +167,7 @@ var biomes = [
  * Ideal dimensions are 24x24px; image will automatically be resized.
  * @type {Array<{iconId: string, path: string}>}
  */
-var iconFiles = [
+const iconFiles = [
     {
         iconId: "worldmap",
         path: "img/website/icon_worldmap.svg"
@@ -182,3 +209,5 @@ var iconFiles = [
         path: "img/website/icon_bonus.svg"
     },
 ];
+
+//#endregion

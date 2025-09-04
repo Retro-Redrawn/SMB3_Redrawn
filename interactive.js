@@ -108,17 +108,17 @@ function loadLayer (areaArray, areaImageArray, areaOldImageArray, layerSubfolder
     {
         var area = areaArray[i];
 
-        // Load new images
+        // Create and set up new image
         var img = new Image();
+        areaImageArray.push(img); // Add to array before loading to maintain order
+        checkImageLoaded(img, function () { onAreaImageLoaded(areaImageArray); }, area);
         img.src = createImageLink(layerSubfolder, NEW_STYLE_NAME, area.ident, NEW_SLICE_SUFFIX);
-        checkImageLoaded(img, function () { onAreaImageLoaded(areaImageArray); });
-        areaImageArray.push(img);
         
-        // Load old images
+        // Create and set up old image
         var oldimg = new Image();
+        areaOldImageArray.push(oldimg); // Add to array before loading to maintain order
+        checkImageLoaded(oldimg, function () { onAreaImageLoaded(areaImageArray); }, area);
         oldimg.src = createImageLink(layerSubfolder, OLD_STYLE_NAME, area.ident, OLD_SLICE_SUFFIX);
-        checkImageLoaded(oldimg, function () { onAreaImageLoaded(areaImageArray); });
-        areaOldImageArray.push(oldimg);
     }
 }
 
@@ -162,22 +162,37 @@ function onAreaImageLoaded (areaImageArray) {
     }
 }
 
-//Check if the image is properly loaded and rendered, .complete does not mean it is rendered and the size is might be set incorrectly
-function checkImageLoaded(img, callback) {
-    img.onload = function () {
-        if (img.naturalHeight > 0 && img.naturalWidth > 0) callback();
-        var counter = 0;
-        var interval = setInterval(function () {
-            counter++;
-            if ((img.naturalHeight > 0 && img.naturalWidth > 0) || counter >= 20) {
-                clearInterval(interval);
-                callback();
-            }
-        }, 500);
-    };
+//Check if the image is properly loaded and rendered
+function checkImageLoaded(img, callback, area) {
+    // Always set up the error handler
     img.onerror = function() {
         callback();
     };
+
+    // Set up the load handler
+    img.onload = function () {
+        // First try to use natural dimensions
+        if (img.naturalHeight > 0 && img.naturalWidth > 0) {
+            callback();
+            return;
+        }
+        
+        // Then try to use area point dimensions if available
+        if (area && area.point && area.point.width && area.point.height) {
+            img.width = area.point.width;
+            img.height = area.point.height;
+            callback();
+            return;
+        }
+
+        // If no dimensions available, just proceed
+        callback();
+    };
+
+    // If the image is already loaded, trigger the onload handler immediately
+    if (img.complete) {
+        img.onload();
+    }
 }
 
 /** Completes the loading process. */

@@ -7,7 +7,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 560,
-      y: 100
+      y: 100,
+      width: 236,
+      height: 168
     },
     offset: {
       x: null,
@@ -29,7 +31,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 100,
-      y: 300
+      y: 300,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -51,7 +55,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 400,
-      y: 300
+      y: 300,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -73,7 +79,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 700,
-      y: 300
+      y: 300,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -95,7 +103,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1000,
-      y: 300
+      y: 300,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -117,7 +127,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 100,
-      y: 580
+      y: 580,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -139,7 +151,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 400,
-      y: 580
+      y: 580,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -161,7 +175,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 700,
-      y: 580
+      y: 580,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -183,7 +199,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1000,
-      y: 580
+      y: 580,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -205,7 +223,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 100,
-      y: 860
+      y: 860,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -227,7 +247,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 400,
-      y: 860
+      y: 860,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -249,7 +271,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 700,
-      y: 860
+      y: 860,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -271,7 +295,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1000,
-      y: 860
+      y: 860,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -293,7 +319,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1730,
-      y: 100
+      y: 100,
+      width: 492,
+      height: 168
     },
     offset: {
       x: null,
@@ -315,7 +343,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1400,
-      y: 300
+      y: 300,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -337,7 +367,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1700,
-      y: 300
+      y: 300,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -359,7 +391,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2000,
-      y: 300
+      y: 300,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -381,7 +415,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2300,
-      y: 300
+      y: 300,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -403,7 +439,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1400,
-      y: 580
+      y: 580,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -425,7 +463,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1700,
-      y: 580
+      y: 580,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -447,7 +487,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2000,
-      y: 580
+      y: 580,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -469,7 +511,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2300,
-      y: 580
+      y: 580,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -491,7 +535,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1400,
-      y: 860
+      y: 860,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -513,7 +559,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1700,
-      y: 860
+      y: 860,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -535,7 +583,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2000,
-      y: 860
+      y: 860,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -557,7 +607,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2300,
-      y: 860
+      y: 860,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -579,7 +631,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1400,
-      y: 1140
+      y: 1140,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -602,7 +656,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1700,
-      y: 1140
+      y: 1140,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -624,7 +680,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2900,
-      y: 100
+      y: 100,
+      width: 750,
+      height: 168
     },
     offset: {
       x: null,
@@ -646,7 +704,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2700,
-      y: 300
+      y: 300,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -668,7 +728,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3000,
-      y: 300
+      y: 300,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -690,7 +752,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3300,
-      y: 300
+      y: 300,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -712,7 +776,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3600,
-      y: 300
+      y: 300,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -734,7 +800,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2700,
-      y: 580
+      y: 580,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -756,7 +824,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3000,
-      y: 580
+      y: 580,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -778,7 +848,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3300,
-      y: 580
+      y: 580,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -800,7 +872,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3600,
-      y: 580
+      y: 580,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -822,7 +896,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2700,
-      y: 860
+      y: 860,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -844,7 +920,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3000,
-      y: 860
+      y: 860,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -866,7 +944,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3300,
-      y: 860
+      y: 860,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -888,7 +968,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3600,
-      y: 860
+      y: 860,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -910,7 +992,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2700,
-      y: 1140
+      y: 1140,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -932,7 +1016,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3000,
-      y: 1140
+      y: 1140,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -954,7 +1040,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3300,
-      y: 1140
+      y: 1140,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -976,7 +1064,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3600,
-      y: 1140
+      y: 1140,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -998,7 +1088,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2700,
-      y: 1420
+      y: 1420,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1020,7 +1112,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 440,
-      y: 1800
+      y: 1800,
+      width: 492,
+      height: 168
     },
     offset: {
       x: null,
@@ -1042,7 +1136,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 100,
-      y: 2000
+      y: 2000,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1064,7 +1160,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 400,
-      y: 2000
+      y: 2000,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1086,7 +1184,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 700,
-      y: 2000
+      y: 2000,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1108,7 +1208,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1000,
-      y: 2000
+      y: 2000,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1130,7 +1232,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 100,
-      y: 2280
+      y: 2280,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1152,7 +1256,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 400,
-      y: 2280
+      y: 2280,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1174,7 +1280,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 700,
-      y: 2280
+      y: 2280,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1196,7 +1304,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1000,
-      y: 2280
+      y: 2280,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1218,7 +1328,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 100,
-      y: 2560
+      y: 2560,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1240,7 +1352,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 400,
-      y: 2560
+      y: 2560,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1262,7 +1376,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 700,
-      y: 2560
+      y: 2560,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1284,7 +1400,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1000,
-      y: 2560
+      y: 2560,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1306,7 +1424,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 100,
-      y: 2840
+      y: 2840,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1329,7 +1449,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 400,
-      y: 2840
+      y: 2840,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1351,7 +1473,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1740,
-      y: 1800
+      y: 1800,
+      width: 468,
+      height: 168
     },
     offset: {
       x: null,
@@ -1373,7 +1497,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1400,
-      y: 2000
+      y: 2000,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1395,7 +1521,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1700,
-      y: 2000
+      y: 2000,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1417,7 +1545,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2000,
-      y: 2000
+      y: 2000,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1439,7 +1569,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2300,
-      y: 2000
+      y: 2000,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1461,7 +1593,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1400,
-      y: 2280
+      y: 2280,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1483,7 +1617,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1700,
-      y: 2280
+      y: 2280,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1505,7 +1641,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2000,
-      y: 2280
+      y: 2280,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1527,7 +1665,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2300,
-      y: 2280
+      y: 2280,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1549,7 +1689,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1400,
-      y: 2560
+      y: 2560,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1571,7 +1713,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1700,
-      y: 2560
+      y: 2560,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1593,7 +1737,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2000,
-      y: 2560
+      y: 2560,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1615,7 +1761,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2300,
-      y: 2560
+      y: 2560,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1637,7 +1785,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1400,
-      y: 2840
+      y: 2840,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1659,7 +1809,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1700,
-      y: 2840
+      y: 2840,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1681,7 +1833,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2000,
-      y: 2840
+      y: 2840,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1703,7 +1857,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2300,
-      y: 2840
+      y: 2840,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1725,7 +1881,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1400,
-      y: 3120
+      y: 3120,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1747,7 +1905,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1700,
-      y: 3120
+      y: 3120,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1769,7 +1929,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2900,
-      y: 1800
+      y: 1800,
+      width: 748,
+      height: 168
     },
     offset: {
       x: null,
@@ -1791,7 +1953,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2700,
-      y: 2000
+      y: 2000,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1813,7 +1977,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3000,
-      y: 2000
+      y: 2000,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1835,7 +2001,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3300,
-      y: 2000
+      y: 2000,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1857,7 +2025,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3600,
-      y: 2000
+      y: 2000,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1879,7 +2049,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2700,
-      y: 2280
+      y: 2280,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1901,7 +2073,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3000,
-      y: 2280
+      y: 2280,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1923,7 +2097,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3300,
-      y: 2280
+      y: 2280,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1945,7 +2121,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3600,
-      y: 2280
+      y: 2280,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1967,7 +2145,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2700,
-      y: 2560
+      y: 2560,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -1989,7 +2169,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3000,
-      y: 2560
+      y: 2560,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2011,7 +2193,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3300,
-      y: 2560
+      y: 2560,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2033,7 +2217,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3600,
-      y: 2560
+      y: 2560,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2055,7 +2241,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2700,
-      y: 2840
+      y: 2840,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2077,7 +2265,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3000,
-      y: 2840
+      y: 2840,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2099,7 +2289,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3300,
-      y: 2840
+      y: 2840,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2121,7 +2313,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3600,
-      y: 2840
+      y: 2840,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2143,7 +2337,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2700,
-      y: 3120
+      y: 3120,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2165,7 +2361,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3000,
-      y: 3120
+      y: 3120,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2187,7 +2385,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3300,
-      y: 3120
+      y: 3120,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2209,7 +2409,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 440,
-      y: 3500
+      y: 3500,
+      width: 492,
+      height: 168
     },
     offset: {
       x: null,
@@ -2231,7 +2433,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 100,
-      y: 3700
+      y: 3700,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2253,7 +2457,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 400,
-      y: 3700
+      y: 3700,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2275,7 +2481,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 700,
-      y: 3700
+      y: 3700,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2297,7 +2505,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1000,
-      y: 3700
+      y: 3700,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2319,7 +2529,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 100,
-      y: 3980
+      y: 3980,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2341,7 +2553,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 400,
-      y: 3980
+      y: 3980,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2363,7 +2577,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 700,
-      y: 3980
+      y: 3980,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2385,7 +2601,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1000,
-      y: 3980
+      y: 3980,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2407,7 +2625,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 100,
-      y: 4260
+      y: 4260,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2429,7 +2649,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 400,
-      y: 4260
+      y: 4260,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2451,7 +2673,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 700,
-      y: 4260
+      y: 4260,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2473,7 +2697,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1000,
-      y: 4260
+      y: 4260,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2495,7 +2721,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 100,
-      y: 4540
+      y: 4540,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2517,7 +2745,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 400,
-      y: 4540
+      y: 4540,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2539,7 +2769,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 700,
-      y: 4540
+      y: 4540,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2561,7 +2793,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1000,
-      y: 4540
+      y: 4540,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2583,7 +2817,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1500,
-      y: 3500
+      y: 3500,
+      width: 940,
+      height: 168
     },
     offset: {
       x: null,
@@ -2605,7 +2841,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1400,
-      y: 3700
+      y: 3700,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2627,7 +2865,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1700,
-      y: 3700
+      y: 3700,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2649,7 +2889,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2000,
-      y: 3700
+      y: 3700,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2671,7 +2913,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2300,
-      y: 3700
+      y: 3700,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2693,7 +2937,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1400,
-      y: 3980
+      y: 3980,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2715,7 +2961,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1700,
-      y: 3980
+      y: 3980,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2737,7 +2985,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2000,
-      y: 3980
+      y: 3980,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2759,7 +3009,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2300,
-      y: 3980
+      y: 3980,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2781,7 +3033,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1400,
-      y: 4260
+      y: 4260,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2803,7 +3057,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 1700,
-      y: 4260
+      y: 4260,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2825,7 +3081,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2000,
-      y: 4260
+      y: 4260,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2847,7 +3105,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2300,
-      y: 4260
+      y: 4260,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2869,7 +3129,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3156,
-      y: 3420
+      y: 3420,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2891,7 +3153,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2700,
-      y: 3700
+      y: 3700,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2913,7 +3177,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3000,
-      y: 3700
+      y: 3700,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2935,7 +3201,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3300,
-      y: 3700
+      y: 3700,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2957,7 +3225,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3600,
-      y: 3700
+      y: 3700,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -2979,7 +3249,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 2700,
-      y: 3980
+      y: 3980,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,
@@ -3001,7 +3273,9 @@ var marioAreas = [
     animation: false,
     point: {
       x: 3000,
-      y: 3980
+      y: 3980,
+      width: 260,
+      height: 244
     },
     offset: {
       x: null,

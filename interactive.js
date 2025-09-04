@@ -285,6 +285,10 @@ function setupCanvas () {
     blurFilter = new PIXI.filters.ZoomBlurFilter()
     bulgeFilter = new PIXI.filters.BulgePinchFilter()
     colorFilter = new PIXI.filters.AlphaFilter()
+    colorFilter.alpha = 1 // Start fully visible (transparent)
+
+    // Apply filters to viewport
+    viewport.filters = [colorFilter]
 
     // Set default position/zoom
     map.scale.set(zoomMin)

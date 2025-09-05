@@ -164,7 +164,7 @@ const biomes = [
  * Directory of image files tied to defined iconIds. 
  * If not defined here, the icon is looked up in the Material Icon library.  
  * See icon list here >> https://fonts.google.com/icons
- * Ideal dimensions are 24x24px; image will automatically be resized.
+ * Ideally use 1:1 ratio svg files; image will automatically be resized.
  * @type {Array<{iconId: string, path: string}>}
  */
 const iconFiles = [

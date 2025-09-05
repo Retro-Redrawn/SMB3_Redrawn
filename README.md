@@ -24,7 +24,7 @@ And now, some steps!
     * If you cloned, you may also want to initialize your own repository on Github (etc) with it for version control and potentially hosting.
 2. Setup your areas file (open areas.js)
     * This is where individual screens in the project will be defined.
-    * Inside the file there are at least one var declarations for an array; these are the Layers. Clean up the array by removing all but one entry in each Layer. Keep as many Layers as you want in the file, but make sure their names are distinct.
+    * Inside the file there are at least one var declarations for an array; these are the Layers. Clean up the array by removing all but one entry in each Layer. Keep as many Layers as you want in the file, but make sure their names are distinct. Alternatively, you can create individual files each containing a unique array name in the format `areas_<name>.js` provided that you include them in the index.html file.
     * We will add content to the individual areas in the array later.
 3. Link your areas to your implementation file
     * Open implementation.js and change the contents of redrawnLayers to contain one entry per layer array you setup in Step 2.
@@ -77,7 +77,7 @@ Unused fields:
 
 ### Using the update_area_dimensions shell script
 
-Before publishing the project, we need the width and height values of each element in the areas.js file to be populated. To do so, make sure [ImageMagick is Installed](https://imagemagick.org/script/download.php), restart your computer, open a Bash terminal (e.g. Git Bash), then call `./update_area_dimensions img/game/old`. If successful, you should see the message `Updated areas.js with image dimensions. Original file backed up as areas.js.backup`.
+Before publishing the project, we need the width and height values of each element in the areas.js file to be populated. To do so, make sure [ImageMagick is Installed](https://imagemagick.org/script/download.php), restart your computer, open a Bash terminal (e.g. Git Bash), then call `./update_area_dimensions`. Follow the prompts for each detected areas.js file, inputting the folder path to the old images when requested (e.g. `./img/game/old`). 
 
 
 Why this Matters:

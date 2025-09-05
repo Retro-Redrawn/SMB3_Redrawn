@@ -1,4 +1,4 @@
-var marioAreas = [
+var areaData = [
   {
     order: 1,
     title: "World 1",

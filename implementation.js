@@ -86,7 +86,7 @@ const redrawnLayers = [
     {
         name: "game", // name of folder containing screens for a layer
         canvasSize: {width: 3960, height: 4900},
-        areas: marioAreas
+        areas: areaData
     }
 ];
 

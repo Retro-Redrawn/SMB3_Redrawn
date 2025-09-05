@@ -4,7 +4,7 @@ var marioAreas = [
     title: "World 1",
     ident: "1-world",
     artistId: "JUAN",
-    animation: false,
+    animation: true,
     point: {
       x: 560,
       y: 100,

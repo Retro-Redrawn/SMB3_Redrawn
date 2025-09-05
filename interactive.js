@@ -109,16 +109,18 @@ function loadLayer (areaArray, areaImageArray, areaOldImageArray, layerSubfolder
         var area = areaArray[i];
 
         // Create and set up new image
-        var img = new Image();
-        areaImageArray.push(img); // Add to array before loading to maintain order
-        checkImageLoaded(img, function () { onAreaImageLoaded(areaImageArray); }, area);
-        img.src = createImageLink(layerSubfolder, NEW_STYLE_NAME, area.ident, NEW_SLICE_SUFFIX);
+    var img = new Image();
+    areaImageArray.push(img); // Add to array before loading to maintain order
+    checkImageLoaded(img, function () { onAreaImageLoaded(areaImageArray); }, area);
+    // If this area requests animation and we're loading the 'new' style, prefer a .gif
+    var newExt = (area && area.animation && NEW_STYLE_NAME) ? '.gif' : '.png';
+    img.src = createImageLink(layerSubfolder, NEW_STYLE_NAME, area.ident, NEW_SLICE_SUFFIX, newExt);
         
         // Create and set up old image
         var oldimg = new Image();
         areaOldImageArray.push(oldimg); // Add to array before loading to maintain order
         checkImageLoaded(oldimg, function () { onAreaImageLoaded(areaImageArray); }, area);
-        oldimg.src = createImageLink(layerSubfolder, OLD_STYLE_NAME, area.ident, OLD_SLICE_SUFFIX);
+    oldimg.src = createImageLink(layerSubfolder, OLD_STYLE_NAME, area.ident, OLD_SLICE_SUFFIX, '.png');
     }
 }
 
@@ -129,7 +131,12 @@ function createImageLink (layerName, mapStyle, areaName, mapSuffix) {
     if (!(mapSuffix === undefined || mapSuffix === '')) {
         link += mapSuffix;
     }
-    link += `.png`; 
+    // Default to .png unless an explicit extension is provided as the 5th argument
+    var extension = '.png';
+    if (arguments.length >= 5 && arguments[4]) {
+        extension = arguments[4];
+    }
+    link += extension;
     
     return link;
 }
@@ -317,17 +324,35 @@ function setupCanvas () {
 }
 
 function buildMap () {
+    // Properly stop/destroy any existing children (including GIF-backed objects) before clearing
     while (mapImages.children[0]) { 
+        var ch = mapImages.children[0];
+        try {
+            // If the object exposes a stop() or destroy() method, call it
+            if (typeof ch.stop === 'function') { try { ch.stop(); } catch (e) {} }
+            if (typeof ch.destroy === 'function') { try { ch.destroy({children:true, texture:true, baseTexture:true}); } catch (e) { ch.destroy && ch.destroy(); } }
+            // If we attached a GifPlayer, destroy it
+            try { cleanupDisplayObjectGif(ch); } catch (e) {}
+        } catch (e) {}
         mapImages.removeChild(mapImages.children[0]);
     }
     for (let i = 0; i < activeAreas.length; i++) {
 
-        // Get area image
+        // Get area image and create a PIXI sprite. If the active image is a GIF (for new style
+        // with area.animation === true) we create a canvas-backed texture and update it each frame.
         var area = activeAreas[i];
-        var src = createImageLink(redrawnLayers[activeLayerIndex].name, currentMapStyle, area.ident);
+        var activeImages = getActiveLayerAreaImages();
+        var areaImage = activeImages[i];
 
-        var sprite = new PIXI.Sprite.from(src);
-        
+            var sprite = null;
+            if (currentMapStyle === NEW_STYLE_NAME && area && area.animation && areaImage.src.match(/\.gif$/i)) {
+                sprite = createCanvasGifSprite(areaImage);
+            } else {
+            // Fallback: use the normal texture path (works for PNGs and static GIF fallbacks)
+            var src = createImageLink(redrawnLayers[activeLayerIndex].name, currentMapStyle, area.ident);
+            sprite = new PIXI.Sprite.from(src);
+        }
+
         sprite.name = `AREA: ${redrawnLayers[activeLayerIndex].name} (${currentMapStyle}) - ${area.ident}`;
 
         // Apply offset to new versions (always relative to old versions)
@@ -663,6 +688,28 @@ function tick () {
         }
     }
     
+    // Update any GIF-backed sprites by drawing the underlying <img> into their canvas and
+    // notifying PIXI that the base texture needs updating.
+    try {
+        if (mapImages && mapImages.children && mapImages.children.length) {
+            for (let mi = 0; mi < mapImages.children.length; mi++) {
+                let child = mapImages.children[mi];
+                if (!child) continue;
+
+                // If the canvas is animated by GifPlayer, just request PIXI to update its base texture
+                if (child._isGif && child._gifCanvas) {
+                    try {
+                        updateGifSprite(child);
+                    } catch (e) {
+                        // ignore per-frame draw errors
+                    }
+                }
+            }
+        }
+    } catch (e) {
+        // ignore overall GIF update errors to avoid breaking the render loop
+    }
+
     requestAnimationFrame(tick)
 }
 
@@ -1268,4 +1315,75 @@ function changeLayer (layer) {
     
     // Adjust canvas focus
     this.focusOnArea(this.activeAreas[Math.floor(Math.random() * layerCount)])
+}
+
+/** Create a PIXI sprite backed by a canvas for the provided HTMLImageElement (GIF fallback).
+ * If GifPlayer is available, it will be used to animate the canvas. Returns the sprite.
+ */
+function createCanvasGifSprite(areaImage) {
+    var canvas = document.createElement('canvas');
+    canvas.width = areaImage.naturalWidth || 1;
+    canvas.height = areaImage.naturalHeight || 1;
+    var ctx = canvas.getContext('2d');
+    try { ctx.drawImage(areaImage, 0, 0); } catch (e) { }
+    var texture = PIXI.Texture.from(canvas);
+    var sprite = new PIXI.Sprite(texture);
+    sprite._isGif = true;
+    sprite._gifCanvas = canvas;
+    sprite._gifCtx = ctx;
+    sprite._gifImg = areaImage;
+    try {
+        if (typeof GifPlayer !== 'undefined' && typeof GifPlayer.create === 'function') {
+            sprite._gifPlayer = GifPlayer.create(areaImage.src, canvas);
+            sprite._gifPlayer.start();
+        }
+    } catch (e) { }
+    return sprite;
+}
+
+/** Safely cleanup any GifPlayer attached to a display object and clear canvas refs. */
+function cleanupDisplayObjectGif(obj) {
+    if (!obj) return;
+    try {
+        if (obj._gifPlayer && typeof obj._gifPlayer.destroy === 'function') {
+            try { obj._gifPlayer.destroy(); } catch (e) {}
+        }
+    } catch (e) {}
+    try {
+        if (obj._gifCanvas) {
+            // attempt to clear the canvas to free memory
+            try { obj._gifCtx && obj._gifCtx.clearRect(0,0,obj._gifCanvas.width, obj._gifCanvas.height); } catch (e) {}
+            try { obj._gifCanvas.width = 0; obj._gifCanvas.height = 0; } catch (e) {}
+            obj._gifCanvas = null;
+            obj._gifCtx = null;
+            obj._gifImg = null;
+        }
+    } catch (e) {}
+}
+
+/** Update a gif-backed sprite each frame: prefer GifPlayer-driven canvases, otherwise draw from image.
+ * Keeps PIXI texture up-to-date.
+ */
+function updateGifSprite(sprite) {
+    if (!sprite || !sprite._gifCanvas) return;
+    // If GifPlayer is animating the canvas, just ask PIXI to update the base texture
+    if (sprite._gifPlayer) {
+        if (sprite.texture && sprite.texture.baseTexture && typeof sprite.texture.baseTexture.update === 'function') {
+            sprite.texture.baseTexture.update();
+        }
+        return;
+    }
+
+    // Fallback: draw current frame from image onto canvas and update texture
+    try {
+        const ctx = sprite._gifCtx;
+        if (!ctx || !sprite._gifImg) return;
+        ctx.clearRect(0, 0, sprite._gifCanvas.width, sprite._gifCanvas.height);
+        try { ctx.drawImage(sprite._gifImg, 0, 0, sprite._gifCanvas.width, sprite._gifCanvas.height); } catch (e) {}
+        if (sprite.texture && sprite.texture.baseTexture && typeof sprite.texture.baseTexture.update === 'function') {
+            sprite.texture.baseTexture.update();
+        }
+    } catch (e) {
+        // swallow errors to avoid breaking tick
+    }
 }

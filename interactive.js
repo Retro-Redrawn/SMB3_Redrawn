@@ -109,18 +109,17 @@ function loadLayer (areaArray, areaImageArray, areaOldImageArray, layerSubfolder
         var area = areaArray[i];
 
         // Create and set up new image
-    var img = new Image();
-    areaImageArray.push(img); // Add to array before loading to maintain order
-    checkImageLoaded(img, function () { onAreaImageLoaded(areaImageArray); }, area);
-    // If this area requests animation and we're loading the 'new' style, prefer a .gif
-    var newExt = (area && area.animation && NEW_STYLE_NAME) ? '.gif' : '.png';
-    img.src = createImageLink(layerSubfolder, NEW_STYLE_NAME, area.ident, NEW_SLICE_SUFFIX, newExt);
-        
+        var img = new Image();
+        areaImageArray.push(img); // Add to array before loading to maintain order
+        img.onload = onAreaImageLoaded(areaImageArray);
+        var newExt = (area && area.animation && NEW_STYLE_NAME) ? '.gif' : '.png'; // Use animated image?
+        img.src = createImageLink(layerSubfolder, NEW_STYLE_NAME, area.ident, NEW_SLICE_SUFFIX, newExt);
+            
         // Create and set up old image
         var oldimg = new Image();
         areaOldImageArray.push(oldimg); // Add to array before loading to maintain order
-        checkImageLoaded(oldimg, function () { onAreaImageLoaded(areaImageArray); }, area);
-    oldimg.src = createImageLink(layerSubfolder, OLD_STYLE_NAME, area.ident, OLD_SLICE_SUFFIX, '.png');
+        oldimg.onload = onAreaImageLoaded(areaImageArray);
+        oldimg.src = createImageLink(layerSubfolder, OLD_STYLE_NAME, area.ident, OLD_SLICE_SUFFIX, '.png');
     }
 }
 
@@ -166,39 +165,6 @@ function onAreaImageLoaded (areaImageArray) {
         if (layersLoaded >= redrawsCount) {
             completeLoading();
         }
-    }
-}
-
-//Check if the image is properly loaded and rendered
-function checkImageLoaded(img, callback, area) {
-    // Always set up the error handler
-    img.onerror = function() {
-        callback();
-    };
-
-    // Set up the load handler
-    img.onload = function () {
-        // First try to use natural dimensions
-        if (img.naturalHeight > 0 && img.naturalWidth > 0) {
-            callback();
-            return;
-        }
-        
-        // Then try to use area point dimensions if available
-        if (area && area.point && area.point.width && area.point.height) {
-            img.width = area.point.width;
-            img.height = area.point.height;
-            callback();
-            return;
-        }
-
-        // If no dimensions available, just proceed
-        callback();
-    };
-
-    // If the image is already loaded, trigger the onload handler immediately
-    if (img.complete) {
-        img.onload();
     }
 }
 
@@ -425,7 +391,7 @@ function RegenerateAreaZones() {
         var area = activeAreas[i];
         var activeImages = getActiveLayerAreaImages();
         var areaImage = activeImages[i];
-        generateAreaZone(area, areaImage);
+        generateAreaZone(area);
     }
 }
 
@@ -520,12 +486,11 @@ function UpdateFill(graphic, areaBox) {
 }
 
 /** Creates PIXI Graphics corresponding to new and old versions of an area. */
-function generateAreaZone (area, areaImage) {
+function generateAreaZone(area) {
     if (!area) { console.error('oopsie, no area'); return }
-    if (!areaImage) { console.error('oopsie, no area image'); return }
     var oldZone = new PIXI.Graphics();
     oldZone.name = `ZONE: ${area.ident} (${OLD_STYLE_NAME})`;
-    var areaBox = getAreaBox(area, areaImage, OLD_STYLE_NAME);
+    var areaBox = getAreaBox(area, OLD_STYLE_NAME);
     UpdateFill(oldZone, areaBox);
     oldZone.alpha = 0;
     area.old_zone = oldZone;
@@ -533,7 +498,7 @@ function generateAreaZone (area, areaImage) {
 
     var newZone = new PIXI.Graphics();
     newZone.name = `ZONE: ${area.ident} (${NEW_STYLE_NAME})`;
-    areaBox = getAreaBox(area, areaImage, NEW_STYLE_NAME);
+    areaBox = getAreaBox(area, NEW_STYLE_NAME);
     UpdateFill(newZone, areaBox);
     newZone.alpha = 0;
     area.new_zone = newZone;
@@ -566,22 +531,21 @@ function updateActiveAreaZone () {
 
 /** Gets the position of an area's box, 
  * with an optional offset applied to 'redrawn' maps to accomodate bleeds and stylistic extensions. 
- * Uses source image for width/height properties.
  * 
  * @param {*} area The struct describing the area.
  * @param {*} areaImage The image used for this area.
  * @param {string} styleOverride Forces the returned box dimensions to be based on a particular style, if defined.
  * */
-function getAreaBox (area, areaImage, styleOverride = "") {
+function getAreaBox (area, styleOverride = "") {
     if (!area) { console.error('oopsie, no area'); return }
 
     // Use current style or override?
     var style = styleOverride === "" ? currentMapStyle : styleOverride;
-    
+
     if (style === NEW_STYLE_NAME) {
-        return {x: area.point.x + area.offset.x, y: area.point.y + area.offset.y, width: areaImage.naturalWidth + area.offset.width, height: areaImage.naturalHeight + area.offset.height}
+        return {x: area.point.x + area.offset.x, y: area.point.y + area.offset.y, width: area.point.width + area.offset.width, height: area.point.height + area.offset.height}
     } else {
-        return {x: area.point.x, y: area.point.y, width: areaImage.naturalWidth, height: areaImage.naturalHeight}
+        return {x: area.point.x, y: area.point.y, width: area.point.width, height: area.point.height}
     }
 }
 
@@ -1294,27 +1258,26 @@ function changeTourCameraSpeed (e) {
  * 
  * @param {string} layer String name of the layer to change to.
  */
-function changeLayer (layer) {
+function changeLayer(layer) {
 
     // Find and switch layer
-    var layerCount = this.layerCount;
     for (let i=0; i< layerCount; i++) {
-        if (layer === this.redrawnLayers[i].name) {
-            this.activeLayerIndex = i;
-            this.activeAreas = this.redrawnLayers[i].areas;
-            this.canvasDimensions = this.redrawnLayers[i].canvasSize;
+        if (layer === redrawnLayers[i].name) {
+            activeLayerIndex = i;
+            activeAreas = redrawnLayers[i].areas;
+            canvasDimensions = redrawnLayers[i].canvasSize;
             break;
         }
     }
 
     // Adjust tab visibility
     const tabs = document.querySelectorAll('#layers li button')
-    let activeLayerName = this.redrawnLayers[this.activeLayerIndex].name;
+    let activeLayerName = redrawnLayers[activeLayerIndex].name;
     tabs.forEach((x) => { if (!x.classList.contains(activeLayerName)) {x.classList.remove('active')} else {x.classList.add('active')} })
-    this.setupCanvas()
+    setupCanvas()
     
     // Adjust canvas focus
-    this.focusOnArea(this.activeAreas[Math.floor(Math.random() * layerCount)])
+    focusOnArea(activeAreas[Math.floor(Math.random() * layerCount)])
 }
 
 /** Create a PIXI sprite backed by a canvas for the provided HTMLImageElement (GIF fallback).

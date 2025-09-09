@@ -39,15 +39,7 @@
                         <img src="img/website/smb3_logo_text.png" alt="Super Mario 3 Redrawn" draggable="false" />
                     </a>
                 </div>
-                <div style="text-align: center;">
-                    <p>
-                    Redrawn
-                    <label class="switch">
-                        <input type="CheckBox" id="mapSelectRedrawn" onclick="toggleMapStyle()">
-                        <span class="slider"></span>
-                    </label>
-                    Original
-                </div>
+
                 <div class="menu__actions">
                     <button onclick="changeTab(0)" class="menu__tab active">
                         Area List
@@ -122,9 +114,19 @@
                         <p>'Super Mario Bros 3 Atheltic Medley' BGM by <a href="https://bsky.app/profile/toribobs.bsky.social">@toribobs</a></p>
                         <p>Based on the Retro Redrawn core project by <a href="https://bsky.app/profile/hyperjerk.bsky.social" target="_blank">@HyperJerk</a> and <a href="https://bsky.app/profile/vvvultures.bsky.social" target="_blank">@vvvultures</a></p>
                         <p>Any and all artists who contributed to this project!</p>
+                    <br>
+                </div>
+                <div class="map-toggle">
+                    <span class="map-toggle-label">Redrawn</span>
+                    <label class="switch">
+                        <input type="checkbox" id="mapSelectRedrawn" onclick="toggleMapStyle()">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="map-toggle-label">Original</span>
+                    <div class="tour">
+                        <button id="tourButton" onclick="toggleTour()"><span class="material-icons">play_arrow</span></button>
                     </div>
                 </div>
-                <br>
                 <div class="bgm">
                     <div class="custom-player" data-player-num="0" data-autoplay="true">
                         <div class="player-controls">
@@ -136,6 +138,7 @@
                                 </div>
                                 <span class="time-display">0:00</span>
                             </div>
+                            <button class="control-btn" data-control="next" title="Next"><span class="material-icons">skip_next</span></button>
                         </div>
                         <div class="track-info-container">
                             <div class="track-info-scroll">
@@ -147,22 +150,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tour">
-                    <button id="tourButton" onclick="toggleTour()"><span class="material-icons">play_arrow</span> <span>Begin Tour</span></button>
-                </div>
-                <div class="menu__disclaimer">
-                    <hr>
-                    <p>
-                        <small>
-                            <b>Disclaimer</b>
-                        </small>
-                    </p>
-                    <p>
-                        <small>
-                            This is a fan art project - it is in no way affiliated with or authorised by the original rights holders and not a functional game map.
-                        </small>
-                    </p>
                 </div>
             </div>
         </div>

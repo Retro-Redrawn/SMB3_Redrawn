@@ -12,10 +12,10 @@ var areaData = [
       height: 168
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "world",
@@ -36,10 +36,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "grass",
@@ -60,10 +60,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "grass",
@@ -84,10 +84,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "grass",
@@ -108,10 +108,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "grass",
@@ -132,10 +132,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "grass",
@@ -156,10 +156,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "grass",
@@ -180,10 +180,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "grass",
@@ -204,10 +204,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "grass",
@@ -228,10 +228,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "grass",
@@ -252,10 +252,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "grass",
@@ -276,10 +276,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "grass",
@@ -300,10 +300,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "grass",
@@ -324,10 +324,10 @@ var areaData = [
       height: 168
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "world",
@@ -348,10 +348,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "desert",
@@ -372,10 +372,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "desert",
@@ -396,10 +396,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "desert",
@@ -420,10 +420,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "desert",
@@ -444,10 +444,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "desert",
@@ -468,10 +468,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "desert",
@@ -492,10 +492,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "desert",
@@ -516,10 +516,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "desert",
@@ -540,10 +540,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "desert",
@@ -564,10 +564,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "desert",
@@ -588,10 +588,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "desert",
@@ -612,10 +612,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "desert",
@@ -636,10 +636,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "desert",
@@ -661,10 +661,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "desert",
@@ -685,10 +685,10 @@ var areaData = [
       height: 168
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "world",
@@ -709,10 +709,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -733,10 +733,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -757,10 +757,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -781,10 +781,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -805,10 +805,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -829,10 +829,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -853,10 +853,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -877,10 +877,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -901,10 +901,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -925,10 +925,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -949,10 +949,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -973,10 +973,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -997,10 +997,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -1021,10 +1021,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -1045,10 +1045,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -1069,10 +1069,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -1093,10 +1093,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "water",
@@ -1117,10 +1117,10 @@ var areaData = [
       height: 168
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "world",
@@ -1141,10 +1141,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "giant",
@@ -1165,10 +1165,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "giant",
@@ -1189,10 +1189,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "giant",
@@ -1213,10 +1213,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "giant",
@@ -1237,10 +1237,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "giant",
@@ -1261,10 +1261,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "giant",
@@ -1285,10 +1285,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "giant",
@@ -1309,10 +1309,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "giant",
@@ -1333,10 +1333,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "giant",
@@ -1357,10 +1357,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "giant",
@@ -1381,10 +1381,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "giant",
@@ -1405,10 +1405,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "giant",
@@ -1429,10 +1429,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "giant",
@@ -1454,10 +1454,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "giant",
@@ -1478,10 +1478,10 @@ var areaData = [
       height: 168
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "world",
@@ -1502,10 +1502,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1526,10 +1526,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1550,10 +1550,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1574,10 +1574,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1598,10 +1598,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1622,10 +1622,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1646,10 +1646,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1670,10 +1670,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1694,10 +1694,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1718,10 +1718,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1742,10 +1742,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1766,10 +1766,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1790,10 +1790,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1814,10 +1814,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1838,10 +1838,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1862,10 +1862,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1886,10 +1886,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1910,10 +1910,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "sky",
@@ -1934,10 +1934,10 @@ var areaData = [
       height: 168
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "world",
@@ -1958,10 +1958,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -1982,10 +1982,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2006,10 +2006,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2030,10 +2030,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2054,10 +2054,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2078,10 +2078,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2102,10 +2102,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2126,10 +2126,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2150,10 +2150,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2174,10 +2174,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2198,10 +2198,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2222,10 +2222,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2246,10 +2246,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2270,10 +2270,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2294,10 +2294,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2318,10 +2318,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2342,10 +2342,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2366,10 +2366,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2390,10 +2390,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "ice",
@@ -2414,10 +2414,10 @@ var areaData = [
       height: 168
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "world",
@@ -2438,10 +2438,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "pipe",
@@ -2462,10 +2462,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "pipe",
@@ -2486,10 +2486,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "pipe",
@@ -2510,10 +2510,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "pipe",
@@ -2534,10 +2534,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "pipe",
@@ -2558,10 +2558,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "pipe",
@@ -2582,10 +2582,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "pipe",
@@ -2606,10 +2606,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "pipe",
@@ -2630,10 +2630,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "pipe",
@@ -2654,10 +2654,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "pipe",
@@ -2678,10 +2678,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "pipe",
@@ -2702,10 +2702,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "pipe",
@@ -2726,10 +2726,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "pipe",
@@ -2750,10 +2750,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "pipe",
@@ -2774,10 +2774,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "pipe",
@@ -2798,10 +2798,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "pipe",
@@ -2822,10 +2822,10 @@ var areaData = [
       height: 168
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "world",
@@ -2846,10 +2846,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "dark",
@@ -2870,10 +2870,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "dark",
@@ -2894,10 +2894,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "dark",
@@ -2918,10 +2918,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "dark",
@@ -2942,10 +2942,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "dark",
@@ -2966,10 +2966,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "dark",
@@ -2990,10 +2990,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "dark",
@@ -3014,10 +3014,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "dark",
@@ -3038,10 +3038,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "dark",
@@ -3062,10 +3062,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "dark",
@@ -3086,10 +3086,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "dark",
@@ -3110,10 +3110,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "dark",
@@ -3134,10 +3134,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "world",
@@ -3158,10 +3158,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "bonus",
@@ -3182,10 +3182,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "bonus",
@@ -3206,10 +3206,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "bonus",
@@ -3230,10 +3230,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "bonus",
@@ -3254,10 +3254,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "bonus",
@@ -3278,10 +3278,10 @@ var areaData = [
       height: 244
     },
     offset: {
-      x: null,
-      y: null,
-      width: null,
-      height: null
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0
     },
     pan: "horizontal",
     type: "bonus",

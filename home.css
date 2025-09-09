@@ -603,16 +603,6 @@ a{
     background-position: left;
     background-repeat: no-repeat; }
 
-/* Show layer icon inside the select when a class is applied */
-#layers_select.kanto {
-    background-image: url('img/website/kanto_button.png');
-}
-#layers_select.interior {
-    background-image: url('img/website/interiors_button.png');
-}
-#layers_select.sevii {
-    background-image: url('img/website/sevii_button.png');
-}
 #layers_select option{
     background-color: #222034;
     color: #fff;

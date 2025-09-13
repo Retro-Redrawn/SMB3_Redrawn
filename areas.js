@@ -725,7 +725,7 @@ var areaData = [
     title: "3-2",
     ident: "3-2",
     artistId: "BLIN",
-    animation: false,
+    animation: true,
     point: {
       x: 3000,
       y: 300,
@@ -965,7 +965,7 @@ var areaData = [
     title: "3-Fortress 1",
     ident: "3-f1",
     artistId: "BACK",
-    animation: false,
+    animation: true,
     point: {
       x: 3600,
       y: 860,
@@ -1013,7 +1013,7 @@ var areaData = [
     title: "3-Hammer Bros. 1",
     ident: "3-h1",
     artistId: "FOOF",
-    animation: false,
+    animation: true,
     point: {
       x: 3000,
       y: 1140,
@@ -2526,7 +2526,7 @@ var areaData = [
     title: "7-5",
     ident: "7-5",
     artistId: "NORM",
-    animation: false,
+    animation: true,
     point: {
       x: 100,
       y: 3980,

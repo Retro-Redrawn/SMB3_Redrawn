@@ -20,7 +20,7 @@
 const AUDIO_TRACKS = [
     {
         title: 'Super Mario Bros 3 Athletic Medley',
-        artist: 'Tori Roberts',
+        artist: 'Tori Roberts, Pokerus Project',
         audio: 'audio/athletic_medley.mp3',
         audio_intro: 'audio/intro_athletic_medley.mp3'
     }
